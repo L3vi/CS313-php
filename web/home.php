@@ -2,15 +2,13 @@
 <html>
 <head>
 	<title>Home</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
-<nav>
-	<ul>
-		<li><a href="home.php">Home</a></li>
-		<li><a href="about-us.php">About Us</a></li>
-		<li><a href="login.php">Login</a></li>
-	</ul>
-</nav>
+<?php
+	require("header.php");
+?>
 <body>
+	<p>Welcome. You are not logged in.</p>
 	<?php 
 	
 	?>

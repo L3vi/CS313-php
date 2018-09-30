@@ -11,6 +11,9 @@
 	</ul>
 </nav>
 <body>
+	
+	<button type="button">Admin Login</button>
+	<button type="button">Tester Login</button>
 	<?php 
 
 	?>
