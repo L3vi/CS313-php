@@ -3,13 +3,9 @@
 <head>
 	<title>About Us</title>
 </head>
-<nav>
-	<ul>
-		<li><a href="home.php">Home</a></li>
-		<li><a href="about-us.php">About Us</a></li>
-		<li><a href="login.php">Login</a></li>
-	</ul>
-</nav>
+<?php
+	require("header.php");
+?>
 <body>
 	<h1>Sleep Well</h1>
 	<h2>Goal</h2>
