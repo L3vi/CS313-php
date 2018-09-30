@@ -1,4 +1,8 @@
-
+<?php
+	$fileName = pathinfo($_SERVER['PHP_SELF'], PATHINFO_EXTENSION);
+	echo $fileName;
+	
+?>
 
 <ul class="nav nav-tabs">
 	<li class="nav-item">
