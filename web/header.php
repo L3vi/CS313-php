@@ -7,9 +7,9 @@
 		<a class="nav-link <?php if ($fileName === 'home') echo 'active' ?>" href="home.php">Home</a>
 	</li>
 	<li class="nav-item">
-		<a class="nav-link <?php if ($fileName === 'assignments') echo 'active' ?>" href="assignments.php">Assignment</a>
+		<a class="nav-link <?php if ($fileName === 'assignments') echo 'active' ?>" href="assignments.php">Assignments</a>
 	</li>
 	<li class="nav-item">
-		<a class="nav-link <?php if ($fileName === 'login') echo 'active' ?>" href="https://l3vi.github.io/index.html">Login</a>
+		<a class="nav-link href="https://l3vi.github.io/index.html">Other Projects</a>
 	</li>
 </ul>
