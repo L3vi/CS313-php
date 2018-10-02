@@ -9,6 +9,9 @@
 ?>
 <body>
 	<p>Welcome. You are not logged in.</p>
+	<br/>
+	<p>Also this website is very undeveloped. #StemFairProblems</p>
+	<p>Move along!</p>
 	<?php 
 	
 	?>
