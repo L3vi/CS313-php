@@ -18,6 +18,12 @@
 		<br/>
 		<input type="submit">
 	</form>
+
+	<form action="userInformation.php" method="post">
+		Name: <input type="test" name="name">
+		<br/>
+		<input type="submit">
+	</form>
 	<?php 
 	
 	?>
