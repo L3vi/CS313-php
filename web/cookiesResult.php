@@ -1,5 +1,4 @@
 <?php
-
 $_COOKIE["fav-nug"];
 ?>
 
@@ -10,7 +9,7 @@ $_COOKIE["fav-nug"];
 </head>
 <body>
 	<?php 
-	echo "Information about my favorite chicken nuggets: $fav-nug";
+	echo Information about my favorite chicken nuggets: $_COOKIE["fav-nug"];
 	?>
 </body>
 </html>
