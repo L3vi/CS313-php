@@ -1,7 +1,7 @@
 <html>
 	<body>
 		<?php
-		echo $names;
+		echo $words;
 		?>
 	</body>
 </html>

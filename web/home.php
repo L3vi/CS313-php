@@ -14,7 +14,7 @@
 	<p>This website is very undeveloped. #StemFairProblems</p>
 	<p>Move along!</p>
 	<form action="form.php" method="post">
-		Enter Words: <input name="words">
+		Enter Words: <input type="text" name="words">
 		<br/>
 		<button type="submit">Submit</button>
 	</form>
