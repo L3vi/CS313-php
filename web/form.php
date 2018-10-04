@@ -1,7 +1,7 @@
 <html>
 	<body>
 		<?php
-		echo $words;
+			echo $_POST["words"];
 		?>
 	</body>
 </html>
