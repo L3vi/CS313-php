@@ -33,8 +33,7 @@ if (isset($_SESSION["timesVisited"])) {
 		<input type="submit">
 	</form>
 	<?php 
-	
-
+	echo $_SESSION["timesVisited"];
 	?>
 </body>
 </html>
