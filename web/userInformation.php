@@ -1,5 +1,6 @@
 <?php
-
+$timesLoaded = 0;
+$timesLodaded++;
 ?>
 
 <!DOCTYPE html>
