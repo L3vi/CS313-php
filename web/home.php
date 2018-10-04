@@ -33,7 +33,13 @@ if (isset($_SESSION["timesVisited"])) {
 		<input type="submit">
 	</form>
 	<?php 
-	echo $_SESSION["timesVisited"];
+	echo "You've visited this website $_SESSION["timesVisited"]";
+	if ($_SESSION["timesVisited"] > 30) {
+		echo "You should probably go now...";
+	}
+	if ($_SESSION["timesVisited"] > 75) {
+		echo "But like really... go away!";
+	} 
 	?>
 </body>
 </html>
