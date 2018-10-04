@@ -13,10 +13,12 @@
 	<br/>
 	<p>This website is very undeveloped. #StemFairProblems</p>
 	<p>Move along!</p>
+	<form action="form.php" method="post">
+		Enter Words: <input name="words">
+		<button type="submit">
+	</form>
 	<?php 
 	
-
-
 	?>
 </body>
 </html>
