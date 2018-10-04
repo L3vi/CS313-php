@@ -2,7 +2,7 @@
 	$fileName = pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME);
 ?>
 
-<ul class="nav nav-tabs">
+<ul class="navbar navbar-dark bg-dark">
 	<li class="nav-item">
 		<a class="nav-link <?php if ($fileName === 'home') echo 'active' ?>" href="home.php">Home</a>
 	</li>
