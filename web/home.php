@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (isset($_SESSION["timesVisited"])) {
+	$_SESSION["timesVisited"]++;
+} else {
+	$_SESSION["timesVisited"] = 1;
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,6 +34,7 @@
 	</form>
 	<?php 
 	
+
 	?>
 </body>
 </html>

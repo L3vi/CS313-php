@@ -1,6 +1,5 @@
 <?php
-$timesLoaded = 0;
-$timesLodaded++;
+session_start();
 ?>
 
 <!DOCTYPE html>
