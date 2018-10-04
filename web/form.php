@@ -1,4 +1,7 @@
-<?php
-
-echo $words
-?>
+<html>
+	<body>
+		<?php
+		echo $names;
+		?>
+	</body>
+</html>
