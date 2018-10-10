@@ -20,7 +20,7 @@ require("header.php");
 
 					<figcaption class="figure-caption">
 						<button type="button" class="btn btn-outline-secondary">-</button>
-						Burger King 
+						Burger King Test
 						<button type="button" class="btn btn-outline-secondary">+</button>
 					</figcaption>
 				</div>
