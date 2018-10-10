@@ -12,7 +12,7 @@
 	<h1 class="display-1 text-center">Nuggs before Drugs</h1>
 	<div class="container">
 	  <div class="row">
-	    <div class="col-lg">
+	    <div class="col-lg text-center">
 	    	<img src="images/burgerKing.jpg"><br/>
 	      <figcaption class="figure-caption">Burger King</figcaption>
 	    </div>
