@@ -3,5 +3,6 @@
 }
 
 .col-lg img {
-	width: 100%;
+	width: 75%;
+	border-color: 2px solid black;
 }

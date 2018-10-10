@@ -13,21 +13,21 @@
 	  <div class="row">
 	    <div class="col-lg">
 	    	<img src="images/burgerKing.jpg"><br/>
-	      Burger King
+	      <figcaption class="figure-caption text-right">Burger King</figcaption>
 	    </div>
 	    <div class="col-lg">
 	    	<img src="images/chickFilA.jpg"><br/>
-	      Chik-Fil-A
+	      <figcaption class="figure-caption text-right">Chik-Fil-A</figcaption>
 	    </div>
 	  </div>
 	  <div class="row">
 	    <div class="col-lg">
 	    	<img src="images/mcDonalds.jpg"><br/>
-	    	McDonalds
+	    	<figcaption class="figure-caption text-right">McDonalds</figcaption>
 	    </div>
 	    <div class="col-lg">
 	    	<img src="images/wendys.jpg"><br/>
-	      Wendy's
+	      <figcaption class="figure-caption text-right">Wendy's</figcaption>
 	    </div>
 	  </div>
 
