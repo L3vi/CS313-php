@@ -17,6 +17,19 @@ figcaption button {
 	background-color: black;
 }
 
-.btn-outline-secondary {
-	background-color: red;
+.btn-increment {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  border-radius: 10px;
+}
+
+.btn-increment:hover {
+  color: #fff;
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+.btn-increment:focus, .btn-increment.focus {
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }

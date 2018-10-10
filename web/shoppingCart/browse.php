@@ -19,18 +19,18 @@ require("header.php");
 					<img src="images/burgerKing.jpg"><br/>
 
 					<figcaption class="figure-caption">
-						<button type="button" class="btn btn-outline-secondary">-</button>
-						Burger King Test
-						<button type="button" class="btn btn-outline-secondary">+</button>
+						<button type="button" class="btn btn-increment">-</button>
+						Burger King 
+						<button type="button" class="btn btn-increment">+</button>
 					</figcaption>
 				</div>
 				<div class="col-lg">
 					<img src="images/chickFilA.jpg"><br/>
 
 					<figcaption class="figure-caption">
-						<button type="button" class="btn btn-outline-secondary">-</button>
+						<button type="button" class="btn btn-increment">-</button>
 						Chik-Fil-A 
-						<button type="button" class="btn btn-outline-secondary">+</button>
+						<button type="button" class="btn btn-increment">+</button>
 					</figcaption>
 				</div>
 			</div>
