@@ -13,21 +13,21 @@
 	  <div class="row">
 	    <div class="col-lg">
 	    	<img src="images/burgerKing.jpg"><br/>
-	      Chicken Nugget #1
+	      Burger King
 	    </div>
 	    <div class="col-lg">
 	    	<img src="images/chickFilA.jpg"><br/>
-	      Chicken Nugget #2
+	      Chik-Fil-A
 	    </div>
 	  </div>
 	  <div class="row">
 	    <div class="col-lg">
 	    	<img src="images/mcDonalds.jpg"><br/>
-	    	Chicken Nugget #3
+	    	McDonalds
 	    </div>
 	    <div class="col-lg">
 	    	<img src="images/wendys.jpg"><br/>
-	      Chicken Nugget #4
+	      Wendy's
 	    </div>
 	  </div>
 
