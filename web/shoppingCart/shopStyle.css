@@ -11,3 +11,7 @@
 .col-lg img:hover {
 	opacity: 0.5;
 }
+
+.col-lg button {
+	border-radius: 5px;
+}
