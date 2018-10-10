@@ -10,7 +10,7 @@
 ?>
 <body>
 	<?php 
-	echo "You will shop here.";
+	echo "This is the cart.";
 
 	?>
 
