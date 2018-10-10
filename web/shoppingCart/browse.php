@@ -9,6 +9,7 @@
 	require("header.php");
 ?>
 <body>
+	<h1 class="display-1">Nuggs before Drugs</h1>
 	<div class="container">
 	  <div class="row">
 	    <div class="col-lg">
