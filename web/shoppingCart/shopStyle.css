@@ -12,6 +12,7 @@
 	opacity: 0.5;
 }
 
-.col-lg button {
-	border-radius: 5px;
+figcaption button {
+	border-radius: 20px;
+	background-color: black;
 }
