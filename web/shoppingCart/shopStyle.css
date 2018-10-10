@@ -12,11 +12,9 @@
 	opacity: 0.5;
 }
 
-figcaption button {
-	border-radius: 20px;
-	background-color: black;
+figcaption {
+	padding: 15px;
 }
-
 .btn-increment {
   color: #fff;
   background-color: #6c757d;
@@ -29,6 +27,7 @@ figcaption button {
   color: #fff;
   background-color: #5a6268;
   border-color: #545b62;
+  opacity: 1;
 }
 
 .btn-increment:focus, .btn-increment.focus {
