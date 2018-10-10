@@ -10,7 +10,7 @@
 ?>
 <body>
 	<h1 class="display-1 text-center">Nuggs before Drugs</h1>
-	<div class="container">
+	<div class="container text-center">
 	  <div class="row">
 	    <div class="col-lg text-center">
 	    	<img src="images/burgerKing.jpg"><br/>
