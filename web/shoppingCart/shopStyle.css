@@ -2,6 +2,11 @@
 	color: #00FFFF;
 }
 
+.col-lg {
+	background-color: gray;
+	opacity: 0.1;
+}
+
 .col-lg img {
 	width: 75%;
 	border: 2px solid black;

@@ -40,14 +40,18 @@ require("header.php");
 					<img src="images/mcDonalds.jpg"><br/>
 
 					<figcaption class="figure-caption">
-						McDonalds 
+						<button type="button" class="btn btn-increment rounded-circle">-</button>
+						 McDonalds 
+						<button type="button" class="btn btn-increment rounded-circle">+</button>
 					</figcaption>
 				</div>
 				<div class="col-lg">
 					<img src="images/wendys.jpg"><br/>
 
 					<figcaption class="figure-caption">
-						Wendy's 
+						<button type="button" class="btn btn-increment rounded-circle">-</button>
+						 Wendy's
+						<button type="button" class="btn btn-increment rounded-circle">+</button>
 					</figcaption>
 				</div>
 			</div>
