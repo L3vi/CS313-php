@@ -16,3 +16,7 @@ figcaption button {
 	border-radius: 20px;
 	background-color: black;
 }
+
+btn-outline-secondary {
+	background-color: red;
+}

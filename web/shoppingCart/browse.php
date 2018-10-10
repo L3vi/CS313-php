@@ -20,26 +20,35 @@ require("header.php");
 
 					<figcaption class="figure-caption">
 						<button type="button" class="btn btn-outline-secondary">-</button>
-						 Burger King 
+						Burger King 
 						<button type="button" class="btn btn-outline-secondary">+</button>
 					</figcaption>
 				</div>
 				<div class="col-lg">
 					<img src="images/chickFilA.jpg"><br/>
-					<figcaption class="figure-caption"><button type="button" class="btn btn-outline-secondary">-</button>
-						 Chik-Fil-A 
-					 <button type="button" class="btn btn-outline-secondary">+</button></figcaption>
+
+					<figcaption class="figure-caption">
+						<button type="button" class="btn btn-outline-secondary">-</button>
+						Chik-Fil-A 
+						<button type="button" class="btn btn-outline-secondary">+</button>
+					</figcaption>
 				</div>
 			</div>
 			<!-- Row 2 -->
 			<div class="row">
 				<div class="col-lg">
 					<img src="images/mcDonalds.jpg"><br/>
-					<figcaption class="figure-caption"> McDonalds </figcaption>
+
+					<figcaption class="figure-caption">
+						McDonalds 
+					</figcaption>
 				</div>
 				<div class="col-lg">
 					<img src="images/wendys.jpg"><br/>
-					<figcaption class="figure-caption"> Wendy's </figcaption>
+
+					<figcaption class="figure-caption">
+						Wendy's 
+					</figcaption>
 				</div>
 			</div>
 
