@@ -12,17 +12,21 @@
 	<div class="container">
 	  <div class="row">
 	    <div class="col-lg">
+	    	<img src="/images/burgerKing.jpg"><br/>
 	      Chicken Nugget #1
 	    </div>
 	    <div class="col-lg">
+	    	<img src="/images/chickFilA.jpg"><br/>
 	      Chicken Nugget #2
 	    </div>
 	  </div>
 	  <div class="row">
 	    <div class="col-lg">
+	    	<img src="/images/mcDonalds.jpg"><br/>
 	    	Chicken Nugget #3
 	    </div>
 	    <div class="col-lg">
+	    	<img src="/images/wendys.jpg"><br/>
 	      Chicken Nugget #4
 	    </div>
 	  </div>
