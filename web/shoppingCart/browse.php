@@ -17,11 +17,11 @@
 	  <div class="row">
 	    <div class="col-lg">
 	    	<img src="images/burgerKing.jpg"><br/>
-	      <figcaption class="figure-caption"><button type="button" class="btn btn-outline-light">-</button>Burger King<button type="button" class="btn btn-outline-light">+</button></figcaption>
+	      <figcaption class="figure-caption"><button type="button" class="btn btn-outline-secondary">-</button>Burger King<button type="button" class="btn btn-outline-secondary">+</button></figcaption>
 	    </div>
 	    <div class="col-lg">
 	    	<img src="images/chickFilA.jpg"><br/>
-	      <figcaption class="figure-caption"><button type="button" class="btn btn-outline-light">-</button>Chik-Fil-A<button type="button" class="btn btn-outline-light">+</button></figcaption>
+	      <figcaption class="figure-caption"><button type="button" class="btn btn-outline-secondary">-</button>Chik-Fil-A<button type="button" class="btn btn-outline-secondary">+</button></figcaption>
 	    </div>
 	  </div>
 <!-- Row 2 -->
