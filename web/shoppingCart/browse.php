@@ -9,7 +9,6 @@
 	require("header.php");
 ?>
 <body>
-	<p>Hello World!</p>
 	<div class="container">
 	  <div class="row">
 	    <div class="col-lg">

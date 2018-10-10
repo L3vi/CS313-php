@@ -3,8 +3,8 @@
 ?>
 
 <ul class="navbar navbar-dark bg-dark justify-content-start">
-		<a class="nav-link <?php if ($fileName === 'home') echo 'active' ?>" href="home.php">Browse</a>
-		<a class="nav-link <?php if ($fileName === 'assignments') echo 'active' ?>" href="assignments.php">Cart</a>
-		<a class="nav-link <?php if ($fileName === 'shop') echo 'active' ?>" href="shop.php">Shop</a>
-		<a class="nav-link" target="_blank" href="https://l3vi.github.io/index.html">Other Projects</a>
+		<a class="nav-link <?php if ($fileName === 'home') echo 'active' ?>" href="../home.php">Home</a>
+		<a class="nav-link <?php if ($fileName === 'browse') echo 'active' ?>" href="browse.php">Browse</a>
+		<a class="nav-link <?php if ($fileName === 'cart') echo 'active' ?>" href="cart.php">Cart</a>
+		<a class="nav-link <?php if ($fileName === 'checkout') echo 'active' ?>" href="checkout.php">Checkout</a>
 </ul>
