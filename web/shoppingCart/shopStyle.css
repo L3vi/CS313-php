@@ -7,3 +7,7 @@
 	border: 2px solid black;
 	border-radius: 5px;
 }
+
+.col-lg img:hover {
+	opacity: 0.5;
+}
