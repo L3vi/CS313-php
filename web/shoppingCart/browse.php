@@ -9,7 +9,27 @@
 	require("header.php");
 ?>
 <body>
-	
+
+	<div class="container">
+
+	  <div class="row">
+	    <div class="col-lg">
+	      Chicken Nugget #1
+	    </div>
+	    <div class="col-lg">
+	      Chicken Nugget #2
+	    </div>
+	  </div>
+	  <div class="row">
+	    <div class="col-lg">
+	    	Chicken Nugget #3
+	    </div>
+	    <div class="col-lg">
+	      Chicken Nugget #4
+	    </div>
+	  </div>
+
+	</div>
 	<?php 
 	echo "You will browse here.";
 
