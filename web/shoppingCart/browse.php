@@ -24,7 +24,7 @@ require("header.php");
 						<figcaption class="figure-caption">
 							<button type="button" class="btn btn-increment rounded-circle" name="decrement1">-</button>
 							Burger King 
-							<button type="button" class="btn btn-increment rounded-circle" name="bk" onclick="increment()">+</button>
+							<button type="button" class="btn btn-increment rounded-circle" value="bk" onclick="increment()">+</button>
 						</figcaption>
 					</form>
 				</div>

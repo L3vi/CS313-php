@@ -3,9 +3,10 @@ var chickFilA = 0;
 var mcDonalds = 0;
 var wendys = 0;
 
-function increment(this) {
+function increment() {
   console.log(this);
   console.log(this.value);
+  console.log(this.val);
   console.log(this.name);
 
 };
