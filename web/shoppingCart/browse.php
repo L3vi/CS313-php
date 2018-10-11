@@ -61,7 +61,7 @@ require("header.php");
 					</figcaption>
 				</div>
 			</div>
-			<input type="submit" name="checkout">
+			<!-- <input type="submit" name="checkout"> -->
 		</div>
 	</form>
 

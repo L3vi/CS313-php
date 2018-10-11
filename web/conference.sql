@@ -1,0 +1,17 @@
+CREATE TABLE users
+(
+	id SERIAL PRIMARY KEY,
+	username VARCHAR(50) UNIQUE NOT NULL,
+	password VARCHAR(50)
+)
+
+CREATE TABLE speakers
+(
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(100) UNIQUE NOT NULL,
+
+)
+
+CREATE TABLE sessions
+(
+)

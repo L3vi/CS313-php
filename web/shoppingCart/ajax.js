@@ -1,3 +1,20 @@
+function updateCart(item, action) {
+  console.log(item);
+  console.log(action);
+  $.ajax({
+    url: "updateCart.php",
+    type: "POST",
+    data: {
+      id: item,
+      action: action
+    },
+    success: function(data) {
+      console.log(data);
+    }
+  });
+};
+
+/*
 var burgerKing = 0;
 var chickFilA = 0;
 var mcDonalds = 0;
@@ -24,17 +41,6 @@ for(i; i < buttons.length; i++) {
     
   });
 }
+*/
 
-function updateCart(item, action) {
-  console.log(item);
-  console.log(action);
-  // $.ajax({
-  //   url: "updateCart.php",
-  //   type: "POST",
-  //   success: function() {
-  //     alert("Success");
-  //   };
-  // });
-};
 
-  
