@@ -1,3 +1,6 @@
+<?php
+	$_POST["increment1"];
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +14,7 @@
 <body>
 	<?php 
 	echo "This is the cart.";
-
+	echo $_POST["name"];
 	?>
 
 </body>

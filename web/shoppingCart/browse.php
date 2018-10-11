@@ -19,18 +19,18 @@ require("header.php");
 					<img src="images/burgerKing.jpg"><br/>
 
 					<figcaption class="figure-caption">
-						<button type="button" class="btn btn-increment rounded-circle">-</button>
+						<button type="button" class="btn btn-increment rounded-circle"name="decrement1">-</button>
 						Burger King 
-						<button type="button" class="btn btn-increment rounded-circle">+</button>
+						<button type="button" class="btn btn-increment rounded-circle" name="increment1" onclick="changeQuantity(1)">+</button>
 					</figcaption>
 				</div>
 				<div class="col-lg">
 					<img src="images/chickFilA.jpg"><br/>
 
 					<figcaption class="figure-caption">
-						<button type="button" class="btn btn-increment rounded-circle">-</button>
+						<button type="button" class="btn btn-increment rounded-circle" name="decrement2">-</button>
 						Chik-Fil-A 
-						<button type="button" class="btn btn-increment rounded-circle">+</button>
+						<button type="button" class="btn btn-increment rounded-circle" name="increment2">+</button>
 					</figcaption>
 				</div>
 			</div>
@@ -40,18 +40,18 @@ require("header.php");
 					<img src="images/mcDonalds.jpg"><br/>
 
 					<figcaption class="figure-caption">
-						<button type="button" class="btn btn-increment rounded-circle">-</button>
+						<button type="button" class="btn btn-increment rounded-circle" name="decrement3">-</button>
 						 McDonalds 
-						<button type="button" class="btn btn-increment rounded-circle">+</button>
+						<button type="button" class="btn btn-increment rounded-circle" name="increment3">+</button>
 					</figcaption>
 				</div>
 				<div class="col-lg">
 					<img src="images/wendys.jpg"><br/>
 
 					<figcaption class="figure-caption">
-						<button type="button" class="btn btn-increment rounded-circle">-</button>
+						<button type="button" class="btn btn-increment rounded-circle" name="decrement4">-</button>
 						 Wendy's
-						<button type="button" class="btn btn-increment rounded-circle">+</button>
+						<button type="button" class="btn btn-increment rounded-circle" name="increment4">+</button>
 					</figcaption>
 				</div>
 			</div>
@@ -60,4 +60,6 @@ require("header.php");
 	</form>
 
 </body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="ajax.js"></script>
 </html>
