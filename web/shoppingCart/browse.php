@@ -24,7 +24,7 @@ require("header.php");
 						<figcaption class="figure-caption">
 							<button type="button" class="btn btn-increment rounded-circle" name="decrement1">-</button>
 							Burger King 
-							<button type="button" class="btn btn-increment rounded-circle" name="increment1">+</button>
+							<button type="button" class="btn btn-increment rounded-circle" name="bk" onclick="increment()">+</button>
 						</figcaption>
 					</form>
 				</div>
@@ -34,7 +34,7 @@ require("header.php");
 					<figcaption class="figure-caption">
 						<button type="button" class="btn btn-increment rounded-circle" name="decrement2">-</button>
 						Chik-Fil-A 
-						<button type="button" class="btn btn-increment rounded-circle" name="increment2">+</button>
+						<button type="button" class="btn btn-increment rounded-circle" name="cf" onclick="increment()">+</button>
 					</figcaption>
 				</div>
 			</div>
@@ -46,7 +46,7 @@ require("header.php");
 					<figcaption class="figure-caption">
 						<button type="button" class="btn btn-increment rounded-circle" name="decrement3">-</button>
 						McDonalds 
-						<button type="button" class="btn btn-increment rounded-circle" name="increment3">+</button>
+						<button type="button" class="btn btn-increment rounded-circle" name="md" onclick="increment()">+</button>
 					</figcaption>
 				</div>
 				<div class="col-lg">
@@ -55,7 +55,7 @@ require("header.php");
 					<figcaption class="figure-caption">
 						<button type="button" class="btn btn-increment rounded-circle" name="decrement4">-</button>
 						Wendy's
-						<button type="button" class="btn btn-increment rounded-circle" name="increment4">+</button>
+						<button type="button" class="btn btn-increment rounded-circle" name="w" onclick="increment()">+</button>
 					</figcaption>
 				</div>
 			</div>
