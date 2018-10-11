@@ -26,6 +26,7 @@ require("header.php");
 						Burger King 
 						<button type="button" class="btn btn-increment rounded-circle" id="bk">+</button>
 					</figcaption>
+					<input type="checkbox" name="cart[]" value="burgerKing">
 					
 				</div>
 				<div class="col-lg">
@@ -36,6 +37,7 @@ require("header.php");
 						Chik-Fil-A 
 						<button type="button" class="btn btn-increment rounded-circle" id="cf">+</button>
 					</figcaption>
+					<input type="checkbox" name="cart[]" value="chickFilA">
 				</div>
 			</div>
 			<!-- Row 2 -->
@@ -48,6 +50,7 @@ require("header.php");
 						McDonalds 
 						<button type="button" class="btn btn-increment rounded-circle" id="md">+</button>
 					</figcaption>
+					<input type="checkbox" name="cart[]" value="mcDonalds">
 				</div>
 				<div class="col-lg">
 					<img src="images/wendys.jpg"><br/>
@@ -57,9 +60,10 @@ require("header.php");
 						Wendy's
 						<button type="button" class="btn btn-increment rounded-circle" id="w">+</button>
 					</figcaption>
+					<input type="checkbox" name="cart[]" value="wendys">
 				</div>
 			</div>
-
+			<input type="submit" name="checkout">
 		</div>
 	</form>
 
