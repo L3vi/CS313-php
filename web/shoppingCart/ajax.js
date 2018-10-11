@@ -8,6 +8,8 @@ var i = 0;
 for(i; i < buttons.length; i++) {
   buttons[i].addEventListener("click", (e) => {
     console.log(e);
+    console.log(e.value);
+    console.log(e.id);
   });
 }
 
