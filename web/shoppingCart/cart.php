@@ -20,7 +20,7 @@ require("header.php");
 		<li class="list-group-item">Vestibulum at eros</li>
 	</ul>
 	<?php 
-	echo "<ul class="list-group">"
+	echo "<ul class=\"list-group\">"
 	foreach ($shoppingList as $item) {
 		echo "<li class=\"list-group-item\">$item</li>"
 		// switch($item) {
