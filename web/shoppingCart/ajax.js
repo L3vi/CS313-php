@@ -21,8 +21,11 @@ function changeQuantity(product) {
     console.log(wendys);
     break;
   };
-document.getElementsByClass('.btn-increment').addEventListener("click", () => {
-  alert("Hello");
+let adjustQuantityButtons = document.querySelectorAll(".btn-increment");
+adjustQuantityButtons.map(e => {
+  e.addEventListener("click", e => {
+    alert("Hello");
+  });
 });
 
   // $.ajax({
