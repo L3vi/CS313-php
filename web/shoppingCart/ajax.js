@@ -21,6 +21,9 @@ function changeQuantity(product) {
     console.log(wendys);
     break;
   };
+document.getElementsByClass('.btn-increment').addEventListener("click", () => {
+  alert("Hello");
+});
 
   // $.ajax({
   //   url: "cart.php",

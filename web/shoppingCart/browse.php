@@ -22,9 +22,9 @@ require("header.php");
 					<img src="images/burgerKing.jpg"><br/>
 					<form action="cart.php" method="post">
 						<figcaption class="figure-caption">
-							<button type="submit" class="btn btn-increment rounded-circle" name="decrement1">-</button>
+							<button type="button" class="btn btn-increment rounded-circle" name="decrement1">-</button>
 							Burger King 
-							<button type="submit" class="btn btn-increment rounded-circle" name="increment1">+</button>
+							<button type="button" class="btn btn-increment rounded-circle" name="increment1">+</button>
 						</figcaption>
 					</form>
 				</div>
@@ -32,9 +32,9 @@ require("header.php");
 					<img src="images/chickFilA.jpg"><br/>
 
 					<figcaption class="figure-caption">
-						<!-- <button type="button" class="btn btn-increment rounded-circle" name="decrement2">-</button> -->
+						<button type="button" class="btn btn-increment rounded-circle" name="decrement2">-</button>
 						Chik-Fil-A 
-						<!-- <button type="button" class="btn btn-increment rounded-circle" name="increment2">+</button> -->
+						<button type="button" class="btn btn-increment rounded-circle" name="increment2">+</button>
 					</figcaption>
 				</div>
 			</div>
