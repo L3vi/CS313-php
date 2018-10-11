@@ -14,7 +14,7 @@
 <body>
 	<?php 
 	echo "This is the cart.";
-	echo $_POST["name"];
+	echo $_POST["increment1"];
 	?>
 
 </body>
