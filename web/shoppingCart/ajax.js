@@ -9,7 +9,7 @@ for(i; i < buttons.length; i++) {
   buttons[i].addEventListener("click", (e) => {
     console.log(e);
     console.log(e.value);
-    console.log(e.id);
+    console.log(e.target.id);
   });
 }
 
