@@ -19,7 +19,8 @@ require("header.php");
 			<!-- Row 1 -->
 			<div class="row">
 				<div class="col-lg">
-					<img src="images/burgerKing.jpg"><br/>
+					
+					<button type="submit" name="burgerKing" value="burgerKing"><img src="images/burgerKing.jpg"></button><br/>
 
 					<figcaption class="figure-caption">
 						<button type="button" class="btn btn-increment rounded-circle" name="decrement1">-</button>
