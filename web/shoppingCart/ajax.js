@@ -5,8 +5,7 @@ var wendys = 0;
 
 function increment() {
   console.log(this);
-  console.log(this.value);
-  console.log(this.val);
+  console.log(this.id);
   console.log(this.name);
 
 };
