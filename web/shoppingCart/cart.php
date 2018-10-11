@@ -3,7 +3,7 @@ session_start();
 if (isset($_POST['shoppingList'])) { 
 	$_SESSION['shoppingList'] = $_POST['cart'];
 }
-$shoppingList = $_SESSION['shoppingList'];
+$shoppingList = $_POST['shoppingList'];
 ?>
 <!DOCTYPE html>
 <html>
