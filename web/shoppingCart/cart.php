@@ -1,5 +1,5 @@
 <?php
-	$_POST["increment1"];
+	var burgerKing = $_POST["increment1"];
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,7 +14,7 @@
 <body>
 	<?php 
 	echo "This is the cart.";
-	echo $_POST["increment1"];
+	echo "$burgerKing";
 	?>
 
 </body>
