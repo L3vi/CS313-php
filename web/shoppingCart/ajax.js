@@ -22,7 +22,7 @@ for(i; i < buttons.length; i++) {
       wendys++;
       break;
     };
-    console.log(burgerKing);
+    
   });
 }
 

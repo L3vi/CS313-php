@@ -1,5 +1,5 @@
 <?php
-	$burgerKing = $_POST['increment1'];
+	$burgerKing = $_POST['burgerKing'];
 ?>
 <!DOCTYPE html>
 <html>

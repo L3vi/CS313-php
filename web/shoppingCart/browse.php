@@ -19,43 +19,45 @@ require("header.php");
 			<!-- Row 1 -->
 			<div class="row">
 				<div class="col-lg">
-					<img src="images/burgerKing.jpg"><br/>
+					<button type="submit" value="burgerKing"><img src="images/burgerKing.jpg"></button>
+					<br/>
 					
 					<figcaption class="figure-caption">
-						<button type="button" class="btn btn-increment rounded-circle" name="decrement1">-</button>
+						<!-- <button type="button" class="btn btn-increment rounded-circle" name="decrement1">-</button> -->
 						Burger King 
-						<button type="button" class="btn btn-increment rounded-circle" id="bk">+</button>
+						<!-- <button type="button" class="btn btn-increment rounded-circle" id="bk">+</button> -->
 					</figcaption>
 					
 				</div>
 				<div class="col-lg">
-					<img src="images/chickFilA.jpg"><br/>
+					<button type="submit" value="chikFilA"><img src="images/chickFilA.jpg"></button>
+					<br/>
 
 					<figcaption class="figure-caption">
-						<button type="button" class="btn btn-increment rounded-circle" name="decrement2">-</button>
+						<!-- <button type="button" class="btn btn-increment rounded-circle" name="decrement2">-</button> -->
 						Chik-Fil-A 
-						<button type="button" class="btn btn-increment rounded-circle" id="cf">+</button>
+						<!-- <button type="button" class="btn btn-increment rounded-circle" id="cf">+</button> -->
 					</figcaption>
 				</div>
 			</div>
 			<!-- Row 2 -->
 			<div class="row">
 				<div class="col-lg">
-					<img src="images/mcDonalds.jpg"><br/>
+					<button type="submit" value="mcDonalds"><img src="images/mcDonalds.jpg"></button><br/>
 
 					<figcaption class="figure-caption">
-						<button type="button" class="btn btn-increment rounded-circle" name="decrement3">-</button>
+						<!-- <button type="button" class="btn btn-increment rounded-circle" name="decrement3">-</button> -->
 						McDonalds 
-						<button type="button" class="btn btn-increment rounded-circle" id="md">+</button>
+						<!-- <button type="button" class="btn btn-increment rounded-circle" id="md">+</button> -->
 					</figcaption>
 				</div>
 				<div class="col-lg">
-					<img src="images/wendys.jpg"><br/>
+					<button type="submit" value="wendys"><img src="images/wendys.jpg"></button><br/>
 
 					<figcaption class="figure-caption">
-						<button type="button" class="btn btn-increment rounded-circle" name="decrement4">-</button>
+						<!-- <button type="button" class="btn btn-increment rounded-circle" name="decrement4">-</button> -->
 						Wendy's
-						<button type="button" class="btn btn-increment rounded-circle" id="w">+</button>
+						<!-- <button type="button" class="btn btn-increment rounded-circle" id="w">+</button> -->
 					</figcaption>
 				</div>
 			</div>

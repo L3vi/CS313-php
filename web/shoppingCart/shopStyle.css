@@ -8,9 +8,13 @@
 	border-radius: 5px;
 }
 
-/*.col-lg img:hover {
+.col-lg img:hover {
 	opacity: 0.5;
-}*/
+}
+
+.col-lg button {
+	border: 0;
+}
 
 figcaption {
 	padding: 10px 0px 20px;
