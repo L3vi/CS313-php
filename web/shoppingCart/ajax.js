@@ -22,11 +22,11 @@ function changeQuantity(product) {
     break;
   };
 
-  $.ajax({
-    url: "cart.php",
-    type: "POST",
-    success: function() {
-      alert("Success");
-    }
-  });
+  // $.ajax({
+  //   url: "cart.php",
+  //   type: "POST",
+  //   success: function() {
+  //     alert("Success");
+  //   }
+  // });
 }
