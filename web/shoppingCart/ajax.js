@@ -26,7 +26,7 @@ for(i; i < buttons.length; i++) {
   });
 }
 
-updateCart(item, action) {
+function updateCart(item, action) {
   console.log(item);
   console.log(action);
   // $.ajax({
