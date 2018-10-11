@@ -23,22 +23,19 @@ require("header.php");
 					<img src="images/burgerKing.jpg"><br/>
 					
 					<figcaption class="figure-caption">
-						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('bk', 'decrement')">-</button>
+						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('burgerKing', 'decrement')">-</button>
 						Burger King 
-						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('bk', 'increment')">+</button>
+						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('burgerKing', 'increment')">+</button>
 					</figcaption>
-					<input type="checkbox" name="cart[]" value="burgerKing">
-					
 				</div>
 				<div class="col-lg">
 					<img src="images/chickFilA.jpg"><br/>
 
 					<figcaption class="figure-caption">
-						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('cf', 'decrement')">-</button>
+						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('chickFilA', 'decrement')">-</button>
 						Chik-Fil-A 
-						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('cf', 'increment')">+</button>
+						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('chickFilA', 'increment')">+</button>
 					</figcaption>
-					<input type="checkbox" name="cart[]" value="chickFilA">
 				</div>
 			</div>
 
@@ -48,21 +45,20 @@ require("header.php");
 					<img src="images/mcDonalds.jpg"><br/>
 
 					<figcaption class="figure-caption">
-						<button type="button" class="btn btn-increment rounded-circle" name="decrement3">-</button>
+						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('mcDonalds', 'decrement')">-</button>
 						McDonalds 
-						<button type="button" class="btn btn-increment rounded-circle" id="md">+</button>
+						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('mcDonalds', 'increment')">+</button>
 					</figcaption>
-					<input type="checkbox" name="cart[]" value="mcDonalds">
+					
 				</div>
 				<div class="col-lg">
 					<img src="images/wendys.jpg"><br/>
 
 					<figcaption class="figure-caption">
-						<button type="button" class="btn btn-increment rounded-circle" name="decrement4">-</button>
+						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('wendys', 'decrement')">-</button>
 						Wendy's
-						<button type="button" class="btn btn-increment rounded-circle" id="w">+</button>
+						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('wendys', 'increment')">+</button>
 					</figcaption>
-					<input type="checkbox" name="cart[]" value="wendys">
 				</div>
 			</div>
 			<input type="submit" name="checkout">
