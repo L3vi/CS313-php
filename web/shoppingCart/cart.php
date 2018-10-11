@@ -1,5 +1,6 @@
 <?php
 	$burgerKing = $_POST['burgerKing'];
+	$shoppingList = $_POST['cart'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,8 +15,9 @@
 <body>
 	<?php 
 	echo "This is the cart.";
-	echo $burgerKing;
-	echo $_POST['increment1'];
+	foreach ($shoppingList as $item) {
+		echo $item;
+	}
 	?>
 
 </body>
