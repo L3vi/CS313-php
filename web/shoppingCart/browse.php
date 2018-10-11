@@ -20,13 +20,13 @@ require("header.php");
 			<div class="row">
 				<div class="col-lg">
 					<img src="images/burgerKing.jpg"><br/>
-					<form action="cart.php" method="post">
-						<figcaption class="figure-caption">
-							<button type="button" class="btn btn-increment rounded-circle" name="decrement1">-</button>
-							Burger King 
-							<button type="button" class="btn btn-increment rounded-circle" id="bk" onclick="increment()">+</button>
-						</figcaption>
-					</form>
+					
+					<figcaption class="figure-caption">
+						<button type="button" class="btn btn-increment rounded-circle" name="decrement1">-</button>
+						Burger King 
+						<button type="button" class="btn btn-increment rounded-circle" id="bk">+</button>
+					</figcaption>
+					
 				</div>
 				<div class="col-lg">
 					<img src="images/chickFilA.jpg"><br/>
