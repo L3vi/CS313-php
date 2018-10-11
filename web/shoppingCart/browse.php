@@ -9,7 +9,7 @@
 require("header.php");
 ?>
 <body>
-	<form>
+	<form action="cart.php" method="post">
 		<h1 class="display-1 text-center">Nuggs before Drugs</h1>
 
 		<div class="container text-center">
