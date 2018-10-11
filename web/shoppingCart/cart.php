@@ -1,9 +1,6 @@
 <?php
-session_start();
-if (isset($_POST['shoppingList'])) { 
-	$_SESSION['shoppingList'] = $_POST['cart'];
-}
-$shoppingList = $_POST['shoppingList'];
+
+$shoppingList = $_POST['cart'];
 ?>
 <!DOCTYPE html>
 <html>

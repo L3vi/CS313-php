@@ -19,6 +19,7 @@ require("header.php");
 		<h1 class="display-1 text-center">Nuggs before Drugs</h1>
 
 		<div class="container text-center">
+			
 			<!-- Row 1 -->
 			<div class="row">
 				<div class="col-lg">
@@ -43,6 +44,7 @@ require("header.php");
 					<input type="checkbox" name="cart[]" value="chickFilA">
 				</div>
 			</div>
+
 			<!-- Row 2 -->
 			<div class="row">
 				<div class="col-lg">
