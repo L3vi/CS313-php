@@ -29,13 +29,13 @@ for(i; i < buttons.length; i++) {
 updateCart(item, action) {
   console.log(item);
   console.log(action);
-  $.ajax({
-    url: "updateCart.php",
-    type: "POST",
-    success: function() {
-      alert("Success");
-    }
-  });
+  // $.ajax({
+  //   url: "updateCart.php",
+  //   type: "POST",
+  //   success: function() {
+  //     alert("Success");
+  //   };
+  // });
 };
 
   
