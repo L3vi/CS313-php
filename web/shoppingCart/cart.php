@@ -16,7 +16,6 @@ require("header.php");
 	<?php 
 	echo "<ul class=\"list-group\">";
 	foreach ($shoppingList as $item) {
-		echo "<li class=\"list-group-item\">$item</li>";
 		switch($item) {
 			case "burgerKing":
 				echo "<li class=\"list-group-item\">Burger King</li>";
