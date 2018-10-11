@@ -7,7 +7,7 @@ var buttons = document.getElementsByClassName("btn-increment");
 var i = 0;
 for(i; i < buttons.length; i++) {
   buttons[i].addEventListener("click", (e) => {
-    console.log("Test");
+    console.log(e);
   });
 }
 
