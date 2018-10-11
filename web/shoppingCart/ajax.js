@@ -9,16 +9,16 @@ for(i; i < buttons.length; i++) {
   buttons[i].addEventListener("click", (e) => {
     console.log(e.target.id);
     switch(e.target.id) {
-      case bk:
+      case "bk":
       burgerKing++;
       break;
-      case cf:
+      case "cf":
       chickFilA++;
       break;
-      case md:
+      case "md":
       mcDonalds++;
       break;
-      case w:
+      case "w":
       wendys++;
       break;
     };
