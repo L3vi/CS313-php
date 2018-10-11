@@ -5,8 +5,10 @@ var wendys = 0;
 
 function increment() {
   console.log("test");
-  alert("Hello");
-}
+  console.log(this);
+  console.log(this.name);
+  console.log(this.value);
+};
 
   // $.ajax({
   //   url: "cart.php",
