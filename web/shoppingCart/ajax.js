@@ -26,10 +26,16 @@ for(i; i < buttons.length; i++) {
   });
 }
 
-  // $.ajax({
-  //   url: "cart.php",
-  //   type: "POST",
-  //   success: function() {
-  //     alert("Success");
-  //   }
-  // });
+updateCart(item, action) {
+  console.log(item);
+  console.log(action);
+  $.ajax({
+    url: "updateCart.php",
+    type: "POST",
+    success: function() {
+      alert("Success");
+    }
+  });
+};
+
+  

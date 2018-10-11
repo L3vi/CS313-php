@@ -23,9 +23,9 @@ require("header.php");
 					<img src="images/burgerKing.jpg"><br/>
 					
 					<figcaption class="figure-caption">
-						<button type="button" class="btn btn-increment rounded-circle" name="decrement1">-</button>
+						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('bk', 'decrement')">-</button>
 						Burger King 
-						<button type="button" class="btn btn-increment rounded-circle" id="bk">+</button>
+						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('bk', 'increment')">+</button>
 					</figcaption>
 					<input type="checkbox" name="cart[]" value="burgerKing">
 					
@@ -34,9 +34,9 @@ require("header.php");
 					<img src="images/chickFilA.jpg"><br/>
 
 					<figcaption class="figure-caption">
-						<button type="button" class="btn btn-increment rounded-circle" name="decrement2">-</button>
+						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('cf', 'decrement')">-</button>
 						Chik-Fil-A 
-						<button type="button" class="btn btn-increment rounded-circle" id="cf">+</button>
+						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('cf', 'increment')">+</button>
 					</figcaption>
 					<input type="checkbox" name="cart[]" value="chickFilA">
 				</div>

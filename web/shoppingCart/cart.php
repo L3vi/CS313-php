@@ -1,5 +1,5 @@
 <?php
-
+if(isset($_POST ))
 $shoppingList = $_POST['cart'];
 ?>
 <!DOCTYPE html>
