@@ -1,24 +1,24 @@
 var burgerKing = 0;
-var ChickFilA = 0;
-var McDonalds = 0;
-var Wendys = 0;
+var chickFilA = 0;
+var mcDonalds = 0;
+var wendys = 0;
 function changeQuantity(product) {
   switch(product) {
     case "burgerKing": 
     burgerKing++;
     console.log(burgerKing);
     break;
-    case "ChickFilA":
-    ChickFilA++;
-    console.log(ChickFilA);
+    case "chickFilA":
+    chickFilA++;
+    console.log(chickFilA);
     break;
     case "McDonalds":
-    McDonalds++;
-    console.log(McDonalds);
+    mcDonalds++;
+    console.log(mcDonalds);
     break;
-    case "Wendys":
-    Wendys++;
-    console.log(Wendys);
+    case "wendys":
+    wendys++;
+    console.log(wendys);
     break;
   };
 
