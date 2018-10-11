@@ -1,8 +1,5 @@
 <?php
-session_start();
-if (isset($_POST['shoppingList'])) { 
-	$_SESSION['shoppingList'] = $_POST['cart'];
-} 
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,11 +12,11 @@ if (isset($_POST['shoppingList'])) {
 require("header.php");
 ?>
 <body>
+	<h1 class="display-1 text-center">Nuggs before Drugs</h1>
+	
 	<form action="cart.php" method="post">
-		<h1 class="display-1 text-center">Nuggs before Drugs</h1>
-
 		<div class="container text-center">
-			
+
 			<!-- Row 1 -->
 			<div class="row">
 				<div class="col-lg">

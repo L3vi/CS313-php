@@ -19,20 +19,21 @@ require("header.php");
 		echo "<li class=\"list-group-item\">$item</li>";
 		switch($item) {
 			case "burgerKing":
-				echo "<li class=\"list-group-item\">Burger King</li>"
+				echo "<li class=\"list-group-item\">Burger King</li>";
 				break;
 			case "chickFilA":
-				echo "<li class=\"list-group-item\">Chick-Fil-A</li>"
+				echo "<li class=\"list-group-item\">Chick-Fil-A</li>";
 				break;
 			case "mcDonalds":
-				echo "<li class=\"list-group-item\">McDonalds</li>"
+				echo "<li class=\"list-group-item\">McDonalds</li>";
 				break;
 			case "wendys":
-				echo "<li class=\"list-group-item\">Wendy's</li>"
+				echo "<li class=\"list-group-item\">Wendy's</li>";
 				break;
 			default:
+				echo "Your cart is empty.";
 				break;
-		}
+		};
 	};
 	echo "</ul";
 	?>
