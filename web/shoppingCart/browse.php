@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +22,7 @@ require("header.php");
 					<img src="images/burgerKing.jpg"><br/>
 
 					<figcaption class="figure-caption">
-						<button type="button" class="btn btn-increment rounded-circle"name="decrement1">-</button>
+						<button type="button" class="btn btn-increment rounded-circle" name="decrement1">-</button>
 						Burger King 
 						<button type="button" class="btn btn-increment rounded-circle" name="increment1">+</button>
 					</figcaption>
