@@ -22,10 +22,11 @@ function changeQuantity(product) {
     break;
   };
 let adjustQuantityButtons = document.querySelectorAll(".btn-increment");
-adjustQuantityButtons.map(e => {
-  e.addEventListener("click", e => {
+adjustQuantityButtons.forEach(button => {
+  button.addEventListener("click", e => {
     alert("Hello");
   });
+  console.log(button);
 });
 
   // $.ajax({
