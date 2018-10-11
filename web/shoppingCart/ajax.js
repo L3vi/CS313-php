@@ -3,9 +3,13 @@ var chickFilA = 0;
 var mcDonalds = 0;
 var wendys = 0;
 
-document.getElementsByClassName("btn-increment").addEventListener("click", (e) => {
-  console.log("Test");
-});
+var buttons = document.getElementsByClassName("btn-increment");
+var i = 0;
+for(i, i < buttons.length, i++) {
+  buttons[i].addEventListener("click", (e) => {
+    console.log("Test");
+  });
+}
 
   // $.ajax({
   //   url: "cart.php",
