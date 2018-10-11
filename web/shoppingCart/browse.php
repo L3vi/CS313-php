@@ -19,22 +19,22 @@ require("header.php");
 			<!-- Row 1 -->
 			<div class="row">
 				<div class="col-lg">
-					
-					<button type="submit" name="burgerKing" value="burgerKing"><img src="images/burgerKing.jpg"></button><br/>
-
-					<figcaption class="figure-caption">
-						<button type="button" class="btn btn-increment rounded-circle" name="decrement1">-</button>
-						Burger King 
-						<button type="button" class="btn btn-increment rounded-circle" name="increment1">+</button>
-					</figcaption>
+					<img src="images/burgerKing.jpg"><br/>
+					<form action="cart.php" method="post">
+						<figcaption class="figure-caption">
+							<button type="submit" class="btn btn-increment rounded-circle" name="decrement1">-</button>
+							Burger King 
+							<button type="submit" class="btn btn-increment rounded-circle" name="increment1">+</button>
+						</figcaption>
+					</form>
 				</div>
 				<div class="col-lg">
 					<img src="images/chickFilA.jpg"><br/>
 
 					<figcaption class="figure-caption">
-						<button type="button" class="btn btn-increment rounded-circle" name="decrement2">-</button>
+						<!-- <button type="button" class="btn btn-increment rounded-circle" name="decrement2">-</button> -->
 						Chik-Fil-A 
-						<button type="button" class="btn btn-increment rounded-circle" name="increment2">+</button>
+						<!-- <button type="button" class="btn btn-increment rounded-circle" name="increment2">+</button> -->
 					</figcaption>
 				</div>
 			</div>
@@ -45,7 +45,7 @@ require("header.php");
 
 					<figcaption class="figure-caption">
 						<button type="button" class="btn btn-increment rounded-circle" name="decrement3">-</button>
-						 McDonalds 
+						McDonalds 
 						<button type="button" class="btn btn-increment rounded-circle" name="increment3">+</button>
 					</figcaption>
 				</div>
@@ -54,7 +54,7 @@ require("header.php");
 
 					<figcaption class="figure-caption">
 						<button type="button" class="btn btn-increment rounded-circle" name="decrement4">-</button>
-						 Wendy's
+						Wendy's
 						<button type="button" class="btn btn-increment rounded-circle" name="increment4">+</button>
 					</figcaption>
 				</div>
