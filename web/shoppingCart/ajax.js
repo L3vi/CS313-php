@@ -5,7 +5,7 @@ var wendys = 0;
 
 function increment() {
   console.log("test");
-  console.log(this);
+  alert("Hello");
 }
 
   // $.ajax({
