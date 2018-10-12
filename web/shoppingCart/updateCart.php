@@ -1,10 +1,12 @@
 <?php
+session_start();
+
+$test = $_SESSION['product'] = "test2";
+echo $test;
+
 
 $item = $_POST['id'];
 $willIncrement = $_POST['willIncrement'];
-echo $item;
-echo $willIncrement;
-exit;
 
 switch ($item) {
 	case 'bk':
@@ -26,6 +28,5 @@ switch ($item) {
 	default:
 	break;
 };
-
 
 ?>
