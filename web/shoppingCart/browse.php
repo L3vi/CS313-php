@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 ?>
 <!DOCTYPE html>
@@ -23,18 +24,18 @@ require("header.php");
 					<img src="images/burgerKing.jpg"><br/>
 					
 					<figcaption class="figure-caption">
-						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('burgerKing', 'decrement')">-</button>
+						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('burgerKing', false)">-</button>
 						Burger King 
-						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('burgerKing', 'increment')">+</button>
+						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('burgerKing', true)">+</button>
 					</figcaption>
 				</div>
 				<div class="col-lg">
 					<img src="images/chickFilA.jpg"><br/>
 
 					<figcaption class="figure-caption">
-						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('chickFilA', 'decrement')">-</button>
+						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('chickFilA', false)">-</button>
 						Chik-Fil-A 
-						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('chickFilA', 'increment')">+</button>
+						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('chickFilA', true)">+</button>
 					</figcaption>
 				</div>
 			</div>
@@ -45,9 +46,9 @@ require("header.php");
 					<img src="images/mcDonalds.jpg"><br/>
 
 					<figcaption class="figure-caption">
-						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('mcDonalds', 'decrement')">-</button>
+						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('mcDonalds', false)">-</button>
 						McDonalds 
-						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('mcDonalds', 'increment')">+</button>
+						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('mcDonalds', true)">+</button>
 					</figcaption>
 					
 				</div>
@@ -55,9 +56,9 @@ require("header.php");
 					<img src="images/wendys.jpg"><br/>
 
 					<figcaption class="figure-caption">
-						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('wendys', 'decrement')">-</button>
+						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('wendys', false)">-</button>
 						Wendy's
-						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('wendys', 'increment')">+</button>
+						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('wendys', true)">+</button>
 					</figcaption>
 				</div>
 			</div>

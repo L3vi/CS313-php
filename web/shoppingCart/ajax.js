@@ -1,12 +1,12 @@
-function updateCart(item, action) {
+function updateCart(item, willIncrement) {
   console.log(item);
-  console.log(action);
+  console.log(willIncrement);
   $.ajax({
     url: "updateCart.php",
     type: "POST",
     data: {
       id: item,
-      action: action
+      willIncrement: willIncrement
     },
     success: function(data) {
       console.log(data);

@@ -14,4 +14,17 @@ CREATE TABLE speakers
 
 CREATE TABLE sessions
 (
+	id SERIAL PRIMARY KEY,
+	month SMALLINT NOT NULL,
+	year SMALLINT NOT NULL
+)
+
+CREATE TABLE notes
+(
+	id SERIAL PRIMARY KEY,
+	content TEXT,
+	date DATE NOT NULL,
+	user_id INT NOT NULL REFERENCES users(id),
+	speaker_id INT NOT NULL REFERENCES speakers(id),
+	session_id INT NOT NULL REFERENCES sessions(id)
 )
