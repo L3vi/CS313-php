@@ -13,8 +13,8 @@ if(!isset($_SESSION['product'])) {
 	// 	price: 2
 	// });
 	$_SESSION['product']) = "Test";
-}
-var_dump($_SESSION);
+};
+var_dump($_SESSION);	
 ?>
 <!DOCTYPE html>
 <html>
