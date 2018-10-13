@@ -6,8 +6,8 @@ $products = $_SESSION['products'];
 foreach ($products as $product) {
 	switch ($product->name) {
 		case 'burgerKingNug':
-		$willIncrement ? $burgerKingNug->quantity++ : $burgerKingNug->quantity--;
-		echo $burgerKingNug;
+		$willIncrement ? $burgerKingNug->quantity += 1 : $burgerKingNug->quantity -= 1;
+		var_dump($burgerKingNug);
 		break;
 
 		case 'chickFilANug':
