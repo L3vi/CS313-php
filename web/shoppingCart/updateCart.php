@@ -5,7 +5,7 @@ $products = $_SESSION['products'];
 
 foreach ($products as $product) {
 	switch ($product->name) {
-		case 'burgerKingNug':
+		case "burgerKingNug":
 		var_dump($_SESSION);
 		break;
 
@@ -25,8 +25,8 @@ foreach ($products as $product) {
 		break;
 
 		default:
-		echo "default";
-		var_dump($_SESSION);
+		echo "Default";
+		// var_dump($_SESSION);
 		break;
 	};	
 };
