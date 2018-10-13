@@ -8,28 +8,28 @@ if(!isset($_SESSION['products'])) {
 		public $price;
 	};
 	$burgerKingNug = new Product();
-	$burgerKingNug->name = "Burger King Nuggs"
+	$burgerKingNug->name = "Burger King Nuggs";
 	$burgerKingNug->quantity = 0;
 	$chickFilANug->price = 2;
 
 	$chickFilANug = new Product();
-	$chickFilANug->name = "Chik-Fil-A Nuggs"
+	$chickFilANug->name = "Chik-Fil-A Nuggs";
 	$chickFilANug->quantity = 0;
 	$chickFilANug->price = 4;
 
 	$mcDonaldsNug = new Product();
-	$mcDonaldsNug->name = "McDonalds Nuggs"
+	$mcDonaldsNug->name = "McDonalds Nuggs";
 	$mcDonaldsNug->quantity = 0;
 	$mcDonaldsNug->price = 1;
 
 	$wendysNug = new Product();
-	$wendysNug->name = "Wendy's Nuggs"
+	$wendysNug->name = "Wendy's Nuggs";
 	$wendysNug->quantity = 0;
 	$wendysNug->price = 3;
 	$_SESSION['products'] = array($burgerKingNug, $chickFilANug, $mcDonaldsNug, $wendysNug);
 
 	$_SESSION['product'] = "Test";
-}
+};
 var_dump($_SESSION);
 
 ?>
