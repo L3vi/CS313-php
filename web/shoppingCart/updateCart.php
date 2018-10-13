@@ -2,8 +2,8 @@
 session_start();
 $products = $_SESSION['products'];
 
+echo $_SESSION['products'][0];
 foreach ($_SESSION['products'] as $product) {
-	echo $product;
 	switch ($product->name) {
 		case "Burger King Nuggs":
 		echo "Burger King";
