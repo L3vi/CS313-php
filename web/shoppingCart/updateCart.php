@@ -1,8 +1,7 @@
 <?php
 session_start();
 
-$test = $_SESSION['product'] = "test2";
-echo $test;
+$_SESSION['product'] = "Test2";
 
 
 $item = $_POST['id'];
