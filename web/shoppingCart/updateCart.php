@@ -1,6 +1,6 @@
 <?php
 session_start();
-echo $_SESSION['products'][0];
+echo $_SESSION['products'];
 var_dump($_SESSION);
 
 // switch ($item) {
