@@ -2,8 +2,8 @@
 session_start();
 $products = $_SESSION['products'];
 
-echo $products['Burger King Nuggs'];
-foreach ($_SESSION['products'] as $product) {
+var_dump($products);
+foreach ($products as $product) {
 	switch ($product->name) {
 		case "Burger King Nuggs":
 		echo "Burger King";
