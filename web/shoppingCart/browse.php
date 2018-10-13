@@ -14,7 +14,7 @@ if(!isset($_SESSION['product'])) {
 	// });
 	$_SESSION['product'] = "Test";
 }
-// var_dump($_SESSION);
+var_dump($_SESSION);
 
 ?>
 <!DOCTYPE html>
