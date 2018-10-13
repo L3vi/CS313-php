@@ -1,8 +1,5 @@
 <?php
 session_start();
-var_dump($_SESSION);
-$_SESSION['product'] = "Test2";
-
 
 $item = $_POST['id'];
 $willIncrement = $_POST['willIncrement'];
