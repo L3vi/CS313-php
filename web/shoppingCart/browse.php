@@ -1,20 +1,21 @@
 <?php
 session_start();
 
-// if(!isset($_SESSION['product'])) {
-// 	// class product {
-// 	// 	public $name;
-// 	// 	public $quantity;
-// 	// 	public $price;
-// 	// };
-// 	// $_SESSION['products'] = array({
-// 	// 	name: "burgerKing",
-// 	// 	quantity: 0,
-// 	// 	price: 2
-// 	// });
-// 	$_SESSION['product']) = "Test";
-// };
-var_dump($_SESSION);	
+if(!isset($_SESSION['product'])) {
+	// class product {
+	// 	public $name;
+	// 	public $quantity;
+	// 	public $price;
+	// };
+	// $_SESSION['products'] = array({
+	// 	name: "burgerKing",
+	// 	quantity: 0,
+	// 	price: 2
+	// });
+	$_SESSION['product'] = "Test";
+}
+var_dump($_SESSION);
+
 ?>
 <!DOCTYPE html>
 <html>
