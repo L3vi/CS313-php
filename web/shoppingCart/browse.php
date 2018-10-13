@@ -26,10 +26,8 @@ if(!isset($_SESSION['products'])) {
 	$wendysNug->name = "Wendy's Nuggs";
 	$wendysNug->quantity = 0;
 	$wendysNug->price = 3;
-	
-	$_SESSION['products'] = array($burgerKingNug, $chickFilANug, $mcDonaldsNug, $wendysNug);
 
-	$_SESSION['product'] = "Test";
+	$_SESSION['products'] = array($burgerKingNug, $chickFilANug, $mcDonaldsNug, $wendysNug);
 };
 // var_dump($_SESSION);
 
