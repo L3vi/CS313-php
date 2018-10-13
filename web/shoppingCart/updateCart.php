@@ -12,7 +12,7 @@ foreach ($products as $product) {
 
 		case 'chickFilANug':
 		$willIncrement ? $chickFilANug->quantity++ : $chickFilANug->quantity--;
-		echo $chickFilANug;
+		var_dump($chickFilANug);
 		break;
 
 		case 'mcDonaldsNug':
@@ -29,6 +29,6 @@ foreach ($products as $product) {
 		break;
 	};	
 };
-var_dump($_SESSION);
+// var_dump($_SESSION);
 
 ?>
