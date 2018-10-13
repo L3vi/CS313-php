@@ -25,6 +25,8 @@ foreach ($products as $product) {
 		break;
 
 		default:
+		echo "default";
+		var_dump($_SESSION);
 		break;
 	};	
 };
