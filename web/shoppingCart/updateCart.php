@@ -1,12 +1,10 @@
 <?php
 session_start();
-
-$item = $_POST['id'];
-$willIncrement = $_POST['willIncrement'];
+echo $_SESSION['products'][0];
 
 switch ($item) {
 	case 'bk':
-	$willIncrement ? $burgerKingQuantity++ : $burgerKingQuantity--;
+	$willIncrement ? $_SESSION['products'][0]->quantity++ : $$_SESSION['products'][0]->quantity--;
 	break;
 
 	case 'cf':

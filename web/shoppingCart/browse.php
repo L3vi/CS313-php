@@ -10,7 +10,7 @@ if(!isset($_SESSION['products'])) {
 	$burgerKingNug = new Product();
 	$burgerKingNug->name = "Burger King Nuggs";
 	$burgerKingNug->quantity = 0;
-	$chickFilANug->price = 2;
+	$burgerKingNug->price = 2;
 
 	$chickFilANug = new Product();
 	$chickFilANug->name = "Chik-Fil-A Nuggs";
@@ -26,6 +26,7 @@ if(!isset($_SESSION['products'])) {
 	$wendysNug->name = "Wendy's Nuggs";
 	$wendysNug->quantity = 0;
 	$wendysNug->price = 3;
+	
 	$_SESSION['products'] = array($burgerKingNug, $chickFilANug, $mcDonaldsNug, $wendysNug);
 
 	$_SESSION['product'] = "Test";
