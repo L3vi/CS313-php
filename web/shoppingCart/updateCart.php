@@ -2,7 +2,7 @@
 session_start();
 $products = $_SESSION['products'];
 
-// echo $products[0];
+echo $products[0];
 foreach ($products as $product) {
 	// echo $product;
 	switch ($product->name) {
