@@ -1,27 +1,30 @@
 <?php
 session_start();
-echo $_SESSION['products'];
+$products = $_SESSION['products'];
+
+
+foreach ($products as $product) {
+	switch ($product->name) {
+		case 'burgerKingNug':
+		$willIncrement ? $burgerKingNug->quantity++ : $burgerKingNug->quantity--;
+		break;
+
+		case 'chickFilANug':
+		$willIncrement ? $chickFilANug->quantity++ : $chickFilANug->quantity--;
+		break;
+
+		case 'mcDonaldsNug':
+		$willIncrement ? $mcDonaldsNug->quantity++ : $mcDonaldsNug->quantity--;
+		break;
+
+		case 'wendysNug':
+		$willIncrement ? $wendysNug->quantity++ : $wendysNug->quantity--;
+		break;
+
+		default:
+		break;
+	};	
+};
 var_dump($_SESSION);
-
-// switch ($item) {
-// 	case 'bk':
-// 	$willIncrement ? $burgerKingQuantity++ : $burgerKingQuantity--;
-// 	break;
-
-// 	case 'cf':
-// 	$willIncrement ? $chickFilAQuantity++ : $chickFilAQuantity--;
-// 	break;
-
-// 	case 'md':
-// 	$willIncrement ? $mcDonaldsQuantity++ : $mcDonaldsQuantity--;
-// 	break;
-
-// 	case 'w':
-// 	$willIncrement ? $wendysQuantity++ : $wendysQuantity--;
-// 	break;
-
-// 	default:
-// 	break;
-// };
 
 ?>
