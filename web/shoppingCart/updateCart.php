@@ -4,7 +4,7 @@ $products = $_SESSION['products'];
 
 // var_dump($products);
 foreach ($products as $product) {
-	echo $product;
+	echo $product->name;
 	// var_dump($product);
 	switch ($product->name) {
 		case "Burger King Nuggs":
