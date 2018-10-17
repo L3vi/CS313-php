@@ -6,11 +6,13 @@
 	<link rel="stylesheet" href="styling.css" type="text/css">
 </head>
 <?php
-	require("header.php");
+require("header.php");
 ?>
 <body>
-
-	<h1>Coming Soon...</h1>
+	<div class="list-group">
+		<a href="shoppingCart/browse.php" class="list-group-item list-group-item-action">Shopping Cart</a>
+		<a href="#ClockIt" class="list-group-item list-group-item-action">Clock It!</a>
+	</div>
 	<?php 
 
 	?>
