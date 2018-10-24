@@ -15,13 +15,14 @@ $users = $statement->fetchAll(PDO::FETCH_ASSOC);
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
+	<select name="users">
 	<?php 
 		foreach ($users as $user) {
-			echo "<datalist>";
-			echo "<option value=\"" . $user['name'] . "\">";
-			echo "</datalist>";
+			
+			echo "<option value=\"" . $user['name'] . "\">" . $user['name'] . "</option>";
 		};
 	?>
+</select>
 	<form action="home.php" method="post">
 		Enter Words: <input type="text" name="words">
 		<br/>
