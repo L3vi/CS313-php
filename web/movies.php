@@ -22,7 +22,7 @@ $movies = $statement->fetchAll(PDO::FETCH_ASSOC);
 			$title = $movie['title'];
 			$year = $movie['year'];
 			echo "<li><p>$title ($year)</p></li>";
-		}
+		};
 	?>
 
 </body>

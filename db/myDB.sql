@@ -6,16 +6,26 @@ CREATE TABLE users (
 
 CREATE TABLE activities (
 	id SERIAL PRIMARY KEY,
-	totalHours INT,
 	name VARCHAR(30),
 	user_id INT REFERENCES users(id)
 );
 
-CREATE TABLE timesheet (
+CREATE TABLE timeEntries (
 	id SERIAL PRIMARY KEY,
 	startTime DATE,
 	endTime DATE, 
-	totalHours INT,
 	activity_id INT REFERENCES activities(id),
 	notes TEXT
 );
+
+-- Insert information for levistuma account
+INSERT INTO users (name, password) VALUES ('levistum', 'admin');
+INSERT INTO activities (name, user_id) VALUES ('work', 1);
+INSERT INTO activities (name, user_id) VALUES ('service', 1);
+INSERT INTO timeEntries (startTime, endTime, activity_id, notes) VALUES ('20180618 09:45:12 AM', '20180618 04:34:09 PM', 1, 'Worked on node.js');
+INSERT INTO timeEntries (startTime, endTime, activity_id, notes) VALUES ('20180618 05:45:12 PM', '20180618 06:34:09 PM', 2, 'Raked some leaves');
+
+-- Insert informaiton for jennaDawg account
+INSERT INTO users (name, password) VALUES ('jennaDawg', 'password');
+INSERT INTO activities (name, user_id) VALUES ('work', 2);
+INSERT INTO timeEntries (startTime, endTime, activity_id, notes) VALUES ('20180618 08:30:33 AM', '20180618 06:56:57 PM', 3, 'Bossed around some software developers');
