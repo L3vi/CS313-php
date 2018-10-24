@@ -10,9 +10,9 @@ $users = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 $user = $_POST['user'];
 
-$statement = $db->prepare('SELECT * FROM activities WHERE user_id=$user');
-$statement->execute();
-$activities = $statement->fetchAll(PDO::FETCH_ASSOC);
+$statement2 = $db->prepare('SELECT * FROM activities WHERE user_id=$user');
+$statement2->execute();
+$activities = $statement2->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 <!DOCTYPE html>
