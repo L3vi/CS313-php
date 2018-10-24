@@ -38,21 +38,8 @@ $activities = $statement2->fetchAll(PDO::FETCH_ASSOC);
 	<ul>
 		<?php 
 		
-		foreach ($activities as $index=>$activity) {
+		foreach ($activities as $activity) {
 			echo "<li>" . $activity['name'] . "</li>";
-			
-			$statement3 = $db->prepare('SELECT * FROM timeEntries WHERE activity_id=:activity');
-			$statement3->bindValue(':activity', $index, PDO::PARAM_INT);
-			$statement3->execute();
-			$timeEntries = $statement3->fetchAll(PDO::FETCH_ASSOC);
-			
-			echo "<ul>";
-			echo "<li>";
-			foreach ($timeEntries as $timeEntry) {
-				echo $timeEntry['startTime'];
-			};
-			echo "</li>";
-			echo "</ul>";
 		};
 		?>
 	</ul>
