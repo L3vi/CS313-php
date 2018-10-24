@@ -17,7 +17,9 @@ $users = $statement->fetchAll(PDO::FETCH_ASSOC);
 <body>
 	<?php 
 		foreach ($users as $user) {
-			echo "<p>" . $user['name'] . "</p>";
+			echo "<datalist>";
+			echo "<option value=\"" . $user['name'] . "\">";
+			echo "</datalist>";
 		};
 	?>
 	<form action="home.php" method="post">
