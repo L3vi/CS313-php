@@ -47,7 +47,7 @@ $activities = $statement2->fetchAll(PDO::FETCH_ASSOC);
 			echo "<ul>";
 			echo "<li>";
 			foreach ($timeEntries as $timeEntry) {
-				echo $timeEntry;
+				echo $timeEntry['startTime'];
 			}
 			echo "</li>";
 			echo "</ul>";
