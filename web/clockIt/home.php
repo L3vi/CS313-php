@@ -31,8 +31,10 @@ $activities = $statement2->fetchAll(PDO::FETCH_ASSOC);
 			};
 			?>
 		</select>
+		<br/>
 		<input style="submit">
 	</form>
+	<p>Activites for listed user...</p>
 	<ul>
 		<?php 
 		foreach ($activities as $activity) {
