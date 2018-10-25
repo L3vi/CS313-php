@@ -17,7 +17,7 @@
 
 	<ul>
 		<?php
-			$foreach ($courses as $course) {
+			foreach ($courses as $course) {
 				$id = $course['id'];
 				$name = $course['name'];
 				$code = $course['code'];
