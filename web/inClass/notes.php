@@ -23,9 +23,6 @@ $course_code = $notes[0]['code'];
 	<title><?php echo "$course_code - $course_name"; ?></title>
 </head>
 <body>
-	<h1><?php echo "$course_code - $course_name"; ?></h1>
-	<?php 
-	
-	?>
+	<h1>Notes for <?php echo "$course_code - $course_name"; ?></h1>
 </body>
 </html>
