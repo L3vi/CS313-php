@@ -13,17 +13,19 @@ $statement->bindValue(':course_id', $course_id, PDO::PARAM_INT);
 $statement->execute();
 $notes = $statement->fetchAll(PDO::FETCH_ASSOC);
 
+$course_name = $notes[0]['name'];
+$course_code = $notes[0]['code'];
+
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Note</title>
+	<title><?php echo "$course_code - $course_name" ?></title>
 </head>
 <body>
+	<h1><?php echo "$course_code - $course_name" ?></h1>
 	<?php 
-	foreach ($notes as $note) {
-		echo $note;
-	}
+	
 	?>
 </body>
 </html>
