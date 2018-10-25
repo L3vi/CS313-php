@@ -20,10 +20,10 @@ $course_code = $notes[0]['code'];
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?php echo "$course_code - $course_name" ?></title>
+	<title><?php echo "$course_code - $course_name"; ?></title>
 </head>
 <body>
-	<h1><?php echo "$course_code - $course_name" ?></h1>
+	<h1><?php echo "$course_code - $course_name"; ?></h1>
 	<?php 
 	
 	?>
