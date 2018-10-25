@@ -21,9 +21,11 @@
 				$id = $course['id'];
 				$name = $course['name'];
 				$code = $course['code'];
-				echo "<li>" . $name . "</li>";
+				echo "<li><p><a href='notes.php?id=$id'>$code - $name</a></p></li>";
 			}
 		?>
+		<li>Test Course 1</li>
+		<li>Test Course 2</li>
 	</ul>
 </body>
 </html>
