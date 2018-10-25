@@ -25,8 +25,6 @@ $courses = $statement->fetchAll(PDO::FETCH_ASSOC);
 			echo "<li><p><a href='notes.php?id=$id'>$code - $name</a></p></li>\n";
 		}
 		?>
-		<li>Test Course 1</li>
-		<li>Test Course 2</li>
 	</ul>
 </body>
 </html>
