@@ -1,5 +1,5 @@
 <?php
-require("dbConnect.php");
+require('dbConnect.php');
 $db = get_db();
 
 $course_id = htmlspecialchars($_GET['id']);
@@ -21,6 +21,11 @@ $course_code = $notes[0]['code'];
 </head>
 <body>
 	<h1>Notes for <?php echo "$course_code - $course_name"; ?></h1>
-	<p><?php echo $course_name; ?></p>
+	<?php
+	foreach ($notes as $note) {
+		$content = $note['content'];
+		echo "<p>$content</p>";
+	};
+	?>
 </body>
 </html>
