@@ -22,8 +22,9 @@ $course_code = $notes[0]['code'];
 <body>
 	<h1>Notes for <?php echo "$course_code - $course_name"; ?></h1>
 	<?php
-	foreach ($notes as $note) {
+	foreach ($notes as $key=>$note) {
 		$content = $note['content'];
+		echo "<p>Note $key:</p>";
 		echo "<p>$content</p>";
 	};
 	?>
