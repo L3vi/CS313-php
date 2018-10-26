@@ -1,11 +1,8 @@
 <?php
-require('dbConnect.php');
+require("dbConnect.php");
 $db = get_db();
 
-$course_id = filter_input(INPUT_POST, 'id');
-if ($id == NULL) {
-	$id = filter_input(INPUT_GET, 'id');
-};
+$course_id = htmlspecialchars($_GET['id']);
 
 $query = 'SELECT n.id AS note_id, c.code, c.name, n.content FROM note n JOIN course c ON n.course_id = c.id WHERE c.id=:course_id';
 $statement = $db->prepare($query);
