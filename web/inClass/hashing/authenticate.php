@@ -12,7 +12,7 @@ $statement->execute();
 $hashedPassword = $statement->fetch(PDO::FETCH_ASSOC);
 
 echo $password;
-echo $hashedPassword;
+echo $hashedPassword['password'];
 
 if (password_verify($password, $hashedPassword['password'])) {
 	header('location:home.php');
