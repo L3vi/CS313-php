@@ -12,6 +12,10 @@ $statement->execute();
 $hashedPassword = $statement->fetch(PDO::FETCH_ASSOC);
 
 
-password_verify($password, $hashedPassword['password']);
+if (password_verify($password, $hashedPassword['password'])) {
+	header('location:home.php');
+} else {
+	echo "Failed";
+};
 
 ?>
