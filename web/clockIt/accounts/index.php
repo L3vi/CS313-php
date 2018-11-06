@@ -24,7 +24,7 @@ switch($action) {
             exit;
         }
         $loginOutcome = loginUser($userEmail, $userPassword);
-
+        var_dump($loginOutcome);
         if ($loginOutcome) {
             
             // Checks to see if log in was successful.
@@ -34,8 +34,7 @@ switch($action) {
             // header("Location: ../index.php");
             header("Location: ../index.php?action=loggedIn");
         } else {
-            // $message = "<p>Sorry, but the username or password you entere were invalid. Please try again.</p><br/>";
-            $message = $loginOutcome;
+            $message = "<p>Sorry, but the username or password you entere were invalid. Please try again.</p><br/>";
             include '../views/login.php';
             exit;
         }
