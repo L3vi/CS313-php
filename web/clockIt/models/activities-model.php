@@ -13,3 +13,7 @@ function getActivities($userId) {
     $statement->closeCursor();
     return $activities;
 }
+
+function setActivity($activity_id) {
+	
+}

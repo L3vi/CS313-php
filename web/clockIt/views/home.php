@@ -14,7 +14,10 @@ session_start();
         
         <nav class="navbar navbar-default bg-dark sticky-top">
             <a class="nav-link" href="activities/index.php?action=displayActivities">Activities</a>
-            <a class="nav-link" href="#">Work</a>
+            <a class="nav-link" href="#">
+                <!-- <?php if(isset($_SESSION['activity_id'])) { echo ; } else { echo "href='accounts/index.php?action=loginView'"; }?> -->
+                    Work
+                </a>
             <a class="nav-link" <?php if(isset($_SESSION['userId'])) { echo "href='accounts/index.php?action=account'"; } else { echo "href='accounts/index.php?action=loginView'"; }?>>Account</a>
         </nav>
 
