@@ -53,7 +53,7 @@ switch ($action) {
     case 'clockIn':
         $successfulClockIn = startTimeEntry($activity_id);
         if ($successfulClockIn) {
-            $message = "<p>Successfully clocked in.</p>";
+            $message = "<p>Successfully clocked in!</p>";
             print_r($_SESSION);
             include 'views/home.php';
             exit;
