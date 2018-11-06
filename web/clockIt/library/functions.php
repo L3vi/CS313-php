@@ -13,8 +13,37 @@ function createTimesheet($timeEntries) {
 	return $timeSheet;
 }
 
+function createWeekNav($workWeek) {
+	$weekNav = "<div class='weekNav'>\n<ul class='nav nav-tabs'>";
+	foreach ($workWeek as $workDay) {
+		$weekNav .= "<li class='nav-item'>\n<a class='nav-link' href='#''>$workDay</a>\n</li>";
+	}
+	$weekNav .= "</ul>\n</div>";
+}
+
 function getTotalTime($timeEntries) {
 	foreach ($timeEntries as $entry) {
 		$today = getdate($entry[starttime]);
 	}
 }
+?>
+
+<div class='weekNav'>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Monday</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Tuesday</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Wednesday</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Thursday</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Friday</a>
+                </li>
+            </ul>
+        </div>

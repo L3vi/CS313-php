@@ -19,6 +19,14 @@ if ($action == NULL) {
 
 $timeEntries = getTimeEntries($activity_id);
 $timeSheet = createTimesheet($timeEntries);
+$workWeek = [
+	"Monday",
+	"Tuesday",
+	"Wednesday",
+	"Thursday",
+	"Friday"
+];
+$weekNav = createWeekNav($workWeek);
 // $totalTime = getTotalTime($timeEntries);
 
 switch ($action) {
