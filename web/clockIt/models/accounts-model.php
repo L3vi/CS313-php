@@ -13,12 +13,8 @@ function loginUser($userEmail, $userPassword) {
     $statement->execute();
     $user = $statement->fetch();
     $statement->closeCursor();
-    var_dump($user);
-    echo "\n";
-    echo "\n";
-    print_r($user[password]);
-    print_r($user[0]);
     $hashedPassword = $user[password];
+    $_SESSION['userId'] = $user[id];
     // Returns true if the hashed version of the input password matches the hashed password
     return password_verify($userPassword, $hashedPassword);
 }
