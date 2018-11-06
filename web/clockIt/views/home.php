@@ -26,6 +26,7 @@
 
         <div class='export'>
             <p>23 Hours <img id='shareImg' class="rounded-circle" src='images/share.png'></p>
+            <?php echo $totalTime; ?>
         </div>
 
         <div class='weekNav'>

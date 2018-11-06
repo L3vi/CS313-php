@@ -19,6 +19,7 @@ if ($action == NULL) {
 
 $timeEntries = getTimeEntries($activity_id);
 $timeSheet = createTimesheet($timeEntries);
+$totalTime = getTotalTime($timeEntries);
 
 switch ($action) {
     case 'loggedIn':
