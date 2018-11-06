@@ -29,6 +29,8 @@ session_start();
                 <input type="submit" value="Logout">
                 <input type="hidden" name="action" value="logout">
             </form>
+            <br/>
+            <a href="../index.php">Home</a>
         </main>
 
         <footer>
