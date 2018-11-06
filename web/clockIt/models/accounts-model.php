@@ -13,7 +13,9 @@ function loginUser($userEmail, $userPassword) {
     $statement->execute();
     $user = $statement->fetch();
     $statement->closeCursor();
-
+    var_dump($user);
+    echo "\n";
+    print_r($user);
     $hashedPassword = $user[password];
     // Returns true if the hashed version of the input password matches the hashed password
     return password_verify($userPassword, $hashedPassword);
