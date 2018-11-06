@@ -16,7 +16,7 @@ function createTimesheet($timeEntries) {
 function createWeekNav($workWeek) {
 	$weekNav = "<div class='weekNav'>\n<ul class='nav nav-tabs'>";
 	foreach ($workWeek as $workDay) {
-		$weekNav .= "<li class='nav-item'>\n<a class='nav-link' href='#''>$workDay</a>\n</li>";
+		$weekNav .= "<li class='nav-item'>\n<a class='nav-link' href='#'>$workDay</a>\n</li>";
 	}
 	$weekNav .= "</ul>\n</div>";
 }
