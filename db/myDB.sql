@@ -1,7 +1,7 @@
 CREATE TABLE users (
 	id SERIAL PRIMARY KEY,
 	email VARCHAR(30) UNIQUE NOT NULL,
-	password VARCHAR(50)
+	password VARCHAR(100)
 );
 
 CREATE TABLE activities (
