@@ -16,7 +16,6 @@ function loginUser($userEmail, $userPassword) {
     $hashedPassword = $user[password];
     session_start();
     $_SESSION['userId'] = $user[id];
-    var_dump($_SESSION);
     // Returns true if the hashed version of the input password matches the hashed password
     return password_verify($userPassword, $hashedPassword);
 }

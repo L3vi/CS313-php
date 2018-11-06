@@ -28,3 +28,12 @@ function getTotalTime($timeEntries) {
 		$today = getdate($entry[starttime]);
 	}
 }
+
+function createActivitiesList($activities) {
+	$activitiesList = '<ul>';
+	foreach ($activities as $activity) {
+		$activitiesList .= "<li><a href='../index.php'>$activity</a></li>";
+	}
+	$activitiesList .= '</ul>';
+	return $activitiesList;
+}

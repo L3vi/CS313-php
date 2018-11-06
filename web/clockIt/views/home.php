@@ -1,10 +1,5 @@
 <?php 
 session_start();
-
-echo $_SESSION['userId'];
-if (!isset($_SESSION['userId'])) {
-    $_SESSION['userId'] = 2;
-};
 ?>
 
 <!DOCTYPE html>
