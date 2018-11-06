@@ -53,11 +53,12 @@ $weekNav = createWeekNav($workWeek);
 switch ($action) {
     case 'clockIn':
     
-    if(isset($_SESSION['activity_id'])) {
-        $successfulClockIn = startTimeEntry($_SESSION['activity_id']);
-    } else {
+    // if(isset($_SESSION['activity_id'])) {
+        // $successfulClockIn = startTimeEntry($_SESSION['activity_id']);
+    // } else {
         // header('Location: activities');
-    }
+    // }
+    $successfulClockIn = false;
     if ($successfulClockIn) {
         $message = "<p>Successfully clocked in!</p>";
         include 'views/home.php';
