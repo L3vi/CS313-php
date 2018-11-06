@@ -35,6 +35,6 @@ switch($action) {
         
         break;
     default:
-        
+        include '../views/display-activities.php';
         break;
 }
