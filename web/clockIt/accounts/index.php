@@ -24,7 +24,6 @@ switch($action) {
             exit;
         }
         $loginOutcome = loginUser($userEmail, $userPassword);
-        var_dump($loginOutcome);
         if ($loginOutcome) {
             
             // Checks to see if log in was successful.

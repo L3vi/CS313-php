@@ -13,6 +13,7 @@ function loginUser($userEmail, $userPassword) {
     $statement->execute();
     $user = $statement->fetchAll();
     $statement->closeCursor();
+    var_dump($user);
     $hashedPassword = $user[password];
     return password_verify($userPassword, $hashedPassword);
 }
