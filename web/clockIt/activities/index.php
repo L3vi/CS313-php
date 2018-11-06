@@ -4,6 +4,7 @@
 
 require_once('../models/activities-model.php');
 require_once('../library/dbConnect.php');
+require_once('../library/functions.php');
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
