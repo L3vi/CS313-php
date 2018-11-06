@@ -5,13 +5,14 @@
 require_once('../models/activities-model.php');
 require_once('../library/dbConnect.php');
 require_once('../library/functions.php');
+session_start();
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
     $action = filter_input(INPUT_GET, 'action');
 }
 
-session_start();
+
 $userId = $_SESSION['userId'];
 
 $activities = getActivities($userId);
@@ -19,6 +20,9 @@ $activitiesList = createActivitiesList($activities);
 
 switch($action) {
     case 'displayActivities':
+        echo $userId;
+        echo $activities;
+        echo $activitiesList;
         include '../views/display-activities.php';
         break;
     case 'createActivityView':
