@@ -42,6 +42,14 @@ nav {
     padding: 1em 0em;
 }
 
+#shareImg {
+    width: 1em;
+    padding: 0.1em;
+    background-color: gray;
+    border: 1px solid black;
+}
+
+
 /* * * * * * * * * * *
 *   timeSheet
 * * * * * * * * * * */
@@ -70,7 +78,7 @@ nav {
     *   body
     * * * * * * * * * * */
     body {
-        
+
     }
 
 
@@ -104,11 +112,11 @@ nav {
     .weekNav {
         font-size: 3em;
     }
-/* Experimental dynamic week nav
-    .weekNav .nav .nav-item a::after {
-        content: "Someday";
-    }
-*/
+    /* Experimental dynamic week nav
+        .weekNav .nav .nav-item a::after {
+            content: "Someday";
+        }
+    */
     .weekContent {
         width: 80%;
     }

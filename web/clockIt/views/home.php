@@ -9,22 +9,23 @@
         <meta name="viewport" content="width=device-width">
     </head>
     <body>
+        
         <nav class="navbar navbar-default bg-dark sticky-top">
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="activities/index.php?action=displayActivities">Activities</a>
             <a class="nav-link" href="#">Work</a>
-            <a class="nav-link" href="#">Account</a>
+            <a class="nav-link" href="accounts/index.php?action=loginView">Account</a>
         </nav>
 
         <div class='timer'>
             <p>00:00:00</p>
-
         </div>
+        
         <div class='timerButton'>
             <button>Clock In</button>
         </div>
 
         <div class='export'>
-            <p>23 Hours &#x279f;</p>
+            <p>23 Hours <img id='shareImg' class="rounded-circle" src='images/share.png'></p>
         </div>
 
 
@@ -47,6 +48,7 @@
                 </li>
             </ul>
         </div>
+        
         <div class='weekContent'>
             <table class="table table-striped table-dark table-hover">
                 <thead>
@@ -79,5 +81,6 @@
                 </tbody>
             </table>
         </div>
+        
     </body>
 </html>

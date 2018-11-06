@@ -2,9 +2,8 @@
 
 // Clock-It Model
 
-// Gets list of projects
-function getTimeEntries() {
-
+// Gets list of activities
+function getActivities() {
 //    $database = dbConnect();
 //    $sql = 'SELECT categoryName, categoryId FROM categories ORDER BY categoryName ASC';
 //    $statement = $database->prepare($sql);
@@ -12,5 +11,4 @@ function getTimeEntries() {
 //    $categories = $statement->fetchAll();
 //    $statement->closeCursor();
 //    return $categories;
-
 }
