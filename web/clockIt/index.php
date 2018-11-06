@@ -56,8 +56,6 @@ switch ($action) {
         break;
     default:
         if(isset($_SESSION['userId'])) {
-            echo $activity_id;
-            echo $activity_name;
             include 'views/home.php';
         } else {
             header('Location: accounts');
