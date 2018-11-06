@@ -22,6 +22,7 @@ if ($activity_name == NULL) {
 $activity_id = filter_input(INPUT_POST, 'activityId');
 if ($activity_id == NULL) {
     $activity_id = filter_input(INPUT_GET, 'activityId');
+    $_SESSION['activity_id'] = $activity_id;
 }
 
 $action = filter_input(INPUT_POST, 'action');
@@ -67,7 +68,7 @@ switch ($action) {
         break;
     default:
         if(isset($_SESSION['userId'])) {
-            if(isset($activity_name)) {
+            if(isset($_SESSION['activity_id'])) {
                 include 'views/home.php';
             } else {
                 header('Location: activities');

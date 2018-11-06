@@ -25,12 +25,6 @@ switch($action) {
         }
         $loginOutcome = loginUser($userEmail, $userPassword);
         if ($loginOutcome) {
-            
-            // Checks to see if log in was successful.
-            // 
-            // 
-            // need to change so browser recognizes user as logged in now
-            // header("Location: ../index.php");
             header("Location: ../index.php");
         } else {
             $message = "<p>Sorry, but the username or password you entere were invalid. Please try again.</p><br/>";
