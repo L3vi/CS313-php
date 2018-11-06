@@ -20,17 +20,17 @@ session_start();
 
         <div class='timer'>
             <p>00:00:00</p>
-            <?php
+            
+        </div>
+        <?php
             if (isset($message)) {
                 echo $message;
             }
             ?>
-        </div>
-        
         <div class='timerButton'>
             <form action="." method="post">
                 <input type="submit" value="Clock In">
-                <input type="hidden" name="action" value="clockIn">
+                <!-- <input type="hidden" name="action" value="clockIn"> -->
             </form>
             
         </div>
