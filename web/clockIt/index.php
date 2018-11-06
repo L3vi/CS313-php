@@ -15,6 +15,16 @@ session_start();
 $activity_name = $activityName;
 $activity_id = $activityId;
 
+$activity_name = filter_input(INPUT_POST, 'activityName');
+if ($activity_name == NULL) {
+    $activity_name = filter_input(INPUT_GET, 'activityName');
+}
+
+$activity_id = filter_input(INPUT_POST, 'activity_id');
+if ($activity_id == NULL) {
+    $activity_id = filter_input(INPUT_GET, 'activity_id');
+}
+
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
     $action = filter_input(INPUT_GET, 'action');
