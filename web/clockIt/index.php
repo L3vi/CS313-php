@@ -26,9 +26,7 @@ $workWeek = [
 	"Thursday",
 	"Friday"
 ];
-var_dump($workWeek);
 $weekNav = createWeekNav($workWeek);
-var_dump($weekNav);
 // $totalTime = getTotalTime($timeEntries);
 
 switch ($action) {

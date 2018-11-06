@@ -19,6 +19,8 @@ function createWeekNav($workWeek) {
 		$weekNav .= "<li class='nav-item'>\n<a class='nav-link' href='#'>$workDay</a>\n</li>";
 	}
 	$weekNav .= "</ul>\n</div>";
+
+	return $weekNav
 }
 
 function getTotalTime($timeEntries) {
