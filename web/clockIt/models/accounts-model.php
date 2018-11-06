@@ -5,24 +5,16 @@
 function loginUser($userEmail, $userPassword) {
     $db = getDatabase();
     // The SQL statement
-    $sql = 'INSERT INTO users (email, password)
-     VALUES (:email, :password)';
+    $sql = 'SELECT (email, password) FROM users WHERE email=:email';
     // Create the prepared statement using the acme connection
-    $stmt = $db->prepare($sql);
-    // The next four lines replace the placeholders in the SQL
-    // statement with the actual values in the variables
-    // and tells the database the type of data it is
-    $stmt->bindValue(':email', $userEmail, PDO::PARAM_STR);
-    $stmt->bindValue(':password', $userPassword, PDO::PARAM_STR);
-    
-    // Insert the data
-    $stmt->execute();
-    // Ask how many rows changed as a result of our insert
-    $rowsChanged = $stmt->rowCount();
-    // Close the database interaction
-    $stmt->closeCursor();
-    // Return the indication of success (rows changed)
-    return $rowsChanged;
+    $statement = $db->prepare($sql);
+    $statement->bindValue(':email', $userEmail, PDO::PARAM_STR);
+    // Get the data
+    $statement->execute();
+    $user = $statement->fetchAll();
+    $statement->closeCursor();
+    $hashedPassword = $user[password];
+    return password_verify($userPassword, $hashedPassword);
 }
 
 function registerUser($userEmail, $userPassword) {
@@ -32,19 +24,17 @@ function registerUser($userEmail, $userPassword) {
     $sql = 'INSERT INTO users (email, password)
      VALUES (:email, :password)';
     // Create the prepared statement using the acme connection
-    $stmt = $db->prepare($sql);
-    // The next four lines replace the placeholders in the SQL
-    // statement with the actual values in the variables
-    // and tells the database the type of data it is
-    $stmt->bindValue(':email', $userEmail, PDO::PARAM_STR);
-    $stmt->bindValue(':password', $userPassword, PDO::PARAM_STR);
+    $statement = $db->prepare($sql);
+    // Bound values
+    $statement->bindValue(':email', $userEmail, PDO::PARAM_STR);
+    $statement->bindValue(':password', $userPassword, PDO::PARAM_STR);
     
     // Insert the data
-    $stmt->execute();
+    $statement->execute();
     // Ask how many rows changed as a result of our insert
-    $rowsChanged = $stmt->rowCount();
+    $rowsChanged = $statement->rowCount();
     // Close the database interaction
-    $stmt->closeCursor();
+    $statement->closeCursor();
     // Return the indication of success (rows changed)
     return $rowsChanged;
 }
