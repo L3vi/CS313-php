@@ -21,7 +21,7 @@ session_start();
             <h1>Your Account</h1>
 
             <?php
-            echo "Email address: " . $_SESSION['email'];
+            echo "Email address: " . $_SESSION['email'] . "<br/>";
             echo "User ID: " . $_SESSION['userId'];
             ?>
 
