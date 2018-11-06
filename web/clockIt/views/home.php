@@ -28,7 +28,7 @@ session_start();
             }
             ?>
         <div class='timerButton'>
-            <form action="../clockIt/index.html" method="post">
+            <form action="../clockIt/index.php" method="post">
                 <input type="submit" value="Clock In">
                 <!-- <input type="hidden" name="action" value="clockIn"> -->
             </form>
