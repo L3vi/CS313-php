@@ -52,35 +52,34 @@ $weekNav = createWeekNav($workWeek);
 
 switch ($action) {
     case 'clockIn':
-    $_SESSION['activity_id'] = filter_input(INPUT_POST, 'activityId');
-    echo $_SESSION['activity_id'];
-    if(isset($_SESSION['activity_id'])) {
-        $successfulClockIn = startTimeEntry($_SESSION['activity_id']);
-    } else {
-        header('Location: activities');
-    }
-    if ($successfulClockIn) {
-        $message = "<p>Successfully clocked in!</p>";
-        include 'views/home.php';
-        exit;
-    } else {
-        $message = "<p>Did not successfully clock in...</p>";
-        include 'views/home.php';
-        exit;
-    }
-    break;
-    case 'clockOut':
-    break;
-    default:
-    if(isset($_SESSION['userId'])) {
-        if(isset($_SESSION['activity_id'])) {
-            include 'views/home.php';
-        } else {
-            header('Location: activities');
-        }
-    } else {
-        header('Location: accounts');
-    }
 
-    break;
+        if(isset($_SESSION['activity_id'])) {
+            $successfulClockIn = startTimeEntry($_SESSION['activity_id']);
+        } else {
+            echo $_SESSION['activity_id'];
+            // header('Location: activities');
+        }
+        if ($successfulClockIn) {
+            $message = "<p>Successfully clocked in!</p>";
+            include 'views/home.php';
+            exit;
+        } else {
+            $message = "<p>Did not successfully clock in...</p>";
+            include 'views/home.php';
+            exit;
+        }
+        break;
+    case 'clockOut':
+        break;
+    default:
+        if(isset($_SESSION['userId'])) {
+            if(isset($_SESSION['activity_id'])) {
+                include 'views/home.php';
+            } else {
+                header('Location: activities');
+            }
+        } else {
+            header('Location: accounts');
+        }
+        break;
 }
