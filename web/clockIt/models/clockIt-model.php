@@ -17,7 +17,7 @@ function startTimeEntry($activity_id) {
 
     $getEntryId = 'SELECT id FROM timeentries WHERE starttime=:starttime';
     $statement2 = $db->prepare($getEntryId);
-    $statemen2->bindValue(':starttime', $startTime, PDO::PARAM_STR);
+    $statement2->bindValue(':starttime', $startTime, PDO::PARAM_STR);
     $statement2->execute();
     $entryId = $statement2->fetch();
     $statement2->closeCursor();
