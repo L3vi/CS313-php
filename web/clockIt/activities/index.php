@@ -20,7 +20,6 @@ $activitiesList = createActivitiesList($activities);
 
 switch($action) {
     case 'displayActivities':
-        
         include '../views/display-activities.php';
         break;
     case 'createActivityView':

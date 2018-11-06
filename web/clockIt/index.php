@@ -11,7 +11,7 @@ session_start();
 //if ($activity_id == NULL) {
 //    $activity_id = 0;
 //}
-$activity_id = 1;
+$activity_id = $selectedActivity;
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
@@ -22,6 +22,7 @@ if ($action == NULL) {
 $timeEntries = getTimeEntries($activity_id);
 // Create timesheet (html table) with timeEntries
 $timeSheet = createTimesheet($timeEntries);
+
 $workWeek = [
 	"Monday",
 	"Tuesday",

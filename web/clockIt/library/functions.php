@@ -32,7 +32,7 @@ function getTotalTime($timeEntries) {
 function createActivitiesList($activities) {
 	$activitiesList = '<ul>';
 	foreach ($activities as $activity) {
-		$activitiesList .= "<li><a href='../index.php'>$activity[name]</a></li>";
+		$activitiesList .= "<li><a href='../index.php?selectedActivity=" . urlencode($activity['id']) . ">$activity[name]</a></li>";
 	}
 	$activitiesList .= '</ul>';
 	return $activitiesList;
