@@ -5,7 +5,7 @@
 // Gets list of activities
 function getActivities($userId) {
 	$database = getDatabase();
-    $sql = 'SELECT name FROM activities WHERE user_id=:userId';
+    $sql = 'SELECT id, name FROM activities WHERE user_id=:userId';
     $statement = $database->prepare($sql);
     $statement->bindValue(':userId', $userId, PDO::PARAM_INT);
     $statement->execute();
