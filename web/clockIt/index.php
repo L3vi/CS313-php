@@ -11,7 +11,9 @@ session_start();
 //if ($activity_id == NULL) {
 //    $activity_id = 0;
 //}
-$activityName = $selectedActivity;
+// Bad naming, but the right variables are being pulled from the activities page
+$activity_name = $activityName;
+$activity_id = $activityId;
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
