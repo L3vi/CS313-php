@@ -52,30 +52,34 @@ $weekNav = createWeekNav($workWeek);
 
 switch ($action) {
     case 'clockIn':
+    if(isset($_SESSION['activity_id'])) {
         $successfulClockIn = startTimeEntry($activity_id);
-        if ($successfulClockIn) {
-            $message = "<p>Successfully clocked in!</p>";
-            print_r($_SESSION);
-            include 'views/home.php';
-            exit;
-        } else {
-            $message = "<p>Did not successfully clock in...</p>";
-            include 'views/home.php';
-            exit;
-        }
-        break;
+    } else {
+        header('Location: activities');
+    }
+    if ($successfulClockIn) {
+        $message = "<p>Successfully clocked in!</p>";
+        print_r($_SESSION);
+        include 'views/home.php';
+        exit;
+    } else {
+        $message = "<p>Did not successfully clock in...</p>";
+        include 'views/home.php';
+        exit;
+    }
+    break;
     case 'clockOut':
-        break;
+    break;
     default:
-        if(isset($_SESSION['userId'])) {
-            if(isset($_SESSION['activity_id'])) {
-                include 'views/home.php';
-            } else {
-                header('Location: activities');
-            }
+    if(isset($_SESSION['userId'])) {
+        if(isset($_SESSION['activity_id'])) {
+            include 'views/home.php';
         } else {
-            header('Location: accounts');
+            header('Location: activities');
         }
-        
-        break;
+    } else {
+        header('Location: accounts');
+    }
+
+    break;
 }
