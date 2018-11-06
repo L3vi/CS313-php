@@ -5,7 +5,7 @@
 function loginUser($userEmail, $userPassword) {
     $db = getDatabase();
     // The SQL statement
-    $sql = 'SELECT (id, password) FROM users WHERE email=:email';
+    $sql = 'SELECT id, password FROM users WHERE email=:email';
     // Create the prepared statement using the acme connection
     $statement = $db->prepare($sql);
     $statement->bindValue(':email', $userEmail, PDO::PARAM_STR);
