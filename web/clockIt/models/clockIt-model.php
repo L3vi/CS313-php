@@ -6,7 +6,7 @@ function startTimeEntry($activity_id) {
     // Create a connection object using the acme connection function
     session_start();
     $db = getDatabase();
-    $startTime = date('Y-m-d') . date('H:i:s');
+    $startTime = date('Y-m-d') . ' ' . date('H:i:s');
     $sql = 'INSERT INTO timeentries (starttime, activity_id) VALUES (:starttime, :activity_id)';
     $statement = $db->prepare($sql);
     $statement->bindValue(':starttime', $startTime, PDO::PARAM_STR);
