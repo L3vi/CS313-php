@@ -19,9 +19,9 @@ if ($activity_name == NULL) {
     $activity_name = filter_input(INPUT_GET, 'activityName');
 }
 
-$activity_id = filter_input(INPUT_POST, 'activity_id');
+$activity_id = filter_input(INPUT_POST, 'activityId');
 if ($activity_id == NULL) {
-    $activity_id = filter_input(INPUT_GET, 'activity_id');
+    $activity_id = filter_input(INPUT_GET, 'activityId');
 }
 
 $action = filter_input(INPUT_POST, 'action');
