@@ -5,6 +5,7 @@
 require_once('library/dbConnect.php');
 require_once('models/clockIt-model.php');
 require_once('library/functions.php');
+session_start();
 
 //$activity_id = filter_input(INPUT_POST, 'activity');
 //if ($activity_id == NULL) {
@@ -42,6 +43,11 @@ switch ($action) {
         include 'views/home.php';
         break;
     default:
-        include 'views/home.php';
+        if(isset($_SESSION['userId'])) {
+            include 'views/home.php';
+        } else {
+            header('Location: ../accounts');
+        }
+        
         break;
 }
