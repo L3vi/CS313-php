@@ -28,7 +28,7 @@ nav {
 
 }
 
-.timerButton button {
+.timerButton input[type=submit] {
     font-size: 3em;
     border-radius: 1em;
     background-color: #006000;

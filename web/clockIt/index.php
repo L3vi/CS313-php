@@ -50,9 +50,20 @@ $weekNav = createWeekNav($workWeek);
 // $totalTime = getTotalTime($timeEntries);
 
 switch ($action) {
-    case 'loggedIn':
-        // Logic to default to the login page if they're not logged in
-        include 'views/home.php';
+    case 'clockIn':
+        $successfulClockIn = startTimeEntry($activity_id);
+        if ($successfulClockIn) {
+            $message = "<p>Successfully clocked in.</p>";
+            print_r($_SESSION);
+            include 'views/home.php';
+            exit;
+        } else {
+            $message = "<p>Did not successfully clock in...</p>";
+            include 'views/home.php';
+            exit;
+        }
+        break;
+    case 'clockOut':
         break;
     default:
         if(isset($_SESSION['userId'])) {
