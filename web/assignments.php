@@ -11,7 +11,7 @@ require("header.php");
 <body>
 	<div class="list-group">
 		<a href="shoppingCart/browse.php" class="list-group-item list-group-item-action">Shopping Cart</a>
-		<a href="#ClockIt" class="list-group-item list-group-item-action">Clock It!</a>
+		<a href="clockIt" class="list-group-item list-group-item-action">Clock It!</a>
 	</div>
 	<?php 
 

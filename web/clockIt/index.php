@@ -51,14 +51,10 @@ $weekNav = createWeekNav($workWeek);
 
 switch ($action) {
     case 'clockIn':
-        $_SESSION['activity_id'] = filter_input(INPUT_POST, 'activityId');
-        if ($_SESSION['activity_id'] == NULL) {
-            $_SESSION['activity_id'] = filter_input(INPUT_GET, 'activityId');
-        }
+        
         if(isset($_SESSION['activity_id'])) {
             $successfulClockIn = startTimeEntry($_SESSION['activity_id']);
         } else {
-            echo $_SESSION['activity_id'];
             // header('Location: activities');
         }
         if ($successfulClockIn) {
