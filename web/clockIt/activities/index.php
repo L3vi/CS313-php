@@ -30,7 +30,7 @@ switch($action) {
         $createOutcome = createActivity($activityName);
         if ($createOutcome) {
             // Assuming it successfully created, send them back to the activities page
-            header('Location: activities');
+            header('Location: ../activities');
         } else {
             echo "Please try creating the activity again.";
         }
