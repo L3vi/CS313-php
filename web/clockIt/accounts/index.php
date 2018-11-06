@@ -63,4 +63,7 @@ switch($action) {
             exit;
         }
         break;
+    default:
+        include '../views/login.php';
+        break;
 }
