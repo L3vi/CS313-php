@@ -17,7 +17,9 @@ if ($action == NULL) {
     $action = filter_input(INPUT_GET, 'action');
 }
 
+// Create variable timeEntries from database
 $timeEntries = getTimeEntries($activity_id);
+// Create timesheet (html table) with timeEntries
 $timeSheet = createTimesheet($timeEntries);
 $workWeek = [
 	"Monday",
@@ -26,6 +28,11 @@ $workWeek = [
 	"Thursday",
 	"Friday"
 ];
+// if screen is smaller use this array instead
+$workWeekSmall = ["M", "Tu", "W", "Th", "F"];
+
+// Create week navigation based on arrays above. Will be dynamic in future according to user settings.
+// Will have the ability to show different days of the week in the future.
 $weekNav = createWeekNav($workWeek);
 // $totalTime = getTotalTime($timeEntries);
 
