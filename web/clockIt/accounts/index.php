@@ -63,6 +63,13 @@ switch($action) {
             exit;
         }
         break;
+    case 'account':
+        include '../views/account.php';
+        break;
+    case 'logout':
+        session_destroy();
+        include '../views/login.php';
+        break;
     default:
         include '../views/login.php';
         break;

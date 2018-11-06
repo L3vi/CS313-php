@@ -5,7 +5,7 @@
 function loginUser($userEmail, $userPassword) {
     $db = getDatabase();
     // The SQL statement
-    $sql = 'SELECT id, password FROM users WHERE email=:email';
+    $sql = 'SELECT id, email, password FROM users WHERE email=:email';
     // Create the prepared statement using the acme connection
     $statement = $db->prepare($sql);
     $statement->bindValue(':email', $userEmail, PDO::PARAM_STR);
@@ -16,6 +16,7 @@ function loginUser($userEmail, $userPassword) {
     $hashedPassword = $user[password];
     session_start();
     $_SESSION['userId'] = $user[id];
+    $_SESSION['email'] = $user[email];
     // Returns true if the hashed version of the input password matches the hashed password
     return password_verify($userPassword, $hashedPassword);
 }
