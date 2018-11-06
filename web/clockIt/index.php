@@ -46,7 +46,7 @@ switch ($action) {
         if(isset($_SESSION['userId'])) {
             include 'views/home.php';
         } else {
-            header('Location: ../accounts?action=loginView');
+            header('Location: ../accounts/index.php?action=loginView');
         }
         
         break;
