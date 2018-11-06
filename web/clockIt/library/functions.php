@@ -26,24 +26,3 @@ function getTotalTime($timeEntries) {
 		$today = getdate($entry[starttime]);
 	}
 }
-?>
-
-<div class='weekNav'>
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Monday</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Tuesday</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Wednesday</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Thursday</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Friday</a>
-                </li>
-            </ul>
-        </div>
