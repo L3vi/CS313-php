@@ -11,7 +11,7 @@ function loginUser($userEmail, $userPassword) {
     $statement->bindValue(':email', $userEmail, PDO::PARAM_STR);
     // Get the data
     $statement->execute();
-    $user = $statement->fetchAll();
+    $user = $statement->fetch();
     $statement->closeCursor();
     var_dump($user);
     $hashedPassword = $user[password];
