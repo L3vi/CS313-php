@@ -21,8 +21,7 @@ $activitiesList = createActivitiesList($activities);
 switch($action) {
     case 'displayActivities':
         echo $userId;
-        echo $activities;
-        echo $activitiesList;
+        print_r($activities);
         include '../views/display-activities.php';
         break;
     case 'createActivityView':
