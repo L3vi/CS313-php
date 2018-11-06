@@ -26,7 +26,9 @@ switch($action) {
         include '../views/create-activity.php';
         break;
     case 'createActivity':
-        if (true) {
+        $activityName = filter_input(INPUT_POST, 'activityName', FILTER_SANITIZE_STRING);
+        $createOutcome = createActivity($activityName);
+        if ($createOutcome) {
             // Assuming it successfully created, send them back to the activities page
             include '../views/display-activities.php';
         } else {
