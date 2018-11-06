@@ -20,13 +20,13 @@
             <form action="../activities/index.php" method="post">
                 Activity Name
                 <br/>
-                <input type="text" name="name" required>
+                <input type="text" name="activityName" required>
                 <br/><br/>
                 <input type="submit" value="Create Activity">
                 <input type="hidden" name="action" value="createActivity">
             </form>
             <br/>
-            <a href="../activities/index.php?action=displayActivities">Cancel</a>
+            <a href="../activities/index.php">Cancel</a>
         </main>
 
         <footer>
