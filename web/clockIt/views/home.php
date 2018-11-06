@@ -27,8 +27,6 @@
         <div class='export'>
             <p>23 Hours <img id='shareImg' class="rounded-circle" src='images/share.png'></p>
         </div>
-        
-        <?php echo $timeSheet; ?>
 
         <div class='weekNav'>
             <ul class="nav nav-tabs">
@@ -51,36 +49,7 @@
         </div>
         
         <div class='weekContent'>
-            <table class="table table-striped table-dark table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col">Start Time</th>
-                        <th scope="col">End Time</th>
-                        <th scope="col"></th>
-                        <th scope="col">Total Time</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>8:00 AM</td>
-                        <td>11:00 AM</td>
-                        <td></td>
-                        <td>3 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>11:30 AM</td>
-                        <td>3:00 PM</td>
-                        <td></td>
-                        <td>3.5 Hours</td>
-                    </tr>
-                    <tr>
-                        <td>4:00 PM</td>
-                        <td>6:00 PM</td>
-                        <td></td>
-                        <td>2 Hours</td>
-                    </tr>
-                </tbody>
-            </table>
+            <?php echo $timeSheet; ?>
         </div>
         
     </body>
