@@ -28,10 +28,9 @@ session_start();
         </div>
         
         <div class='timerButton'>
-            <form>
+            <form action="../index.php" method="post">
                 <input type="submit" value="Clock In">
                 <input type="hidden" value="clockIn">
-                <button>Clock In</button>
             </form>
             
         </div>
