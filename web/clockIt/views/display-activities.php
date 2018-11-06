@@ -18,11 +18,12 @@
             <h1>Projects</h1>
 
             <!--Dynamically display activities-->
-            <ul>
+            <?php echo $activitiesList; ?>
+            <!-- <ul>
                 <li><a href='../index.php'>Work</a></li>
                 <li>Service</li>
                 <li>Personal Project</li>
-            </ul>
+            </ul> -->
             <a href="../activities/index.php?action=createActivityView">Create a new Project</a>
 
 
