@@ -14,7 +14,7 @@ session_start();
 $userId = $_SESSION['userId'];
 
 $activities = getActivities($userId);
-$activitiesList = createActivitesList($activities);
+$activitiesList = createActivitiesList($activities);
 
 switch($action) {
     case 'displayActivities':
