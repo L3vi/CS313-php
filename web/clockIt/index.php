@@ -59,7 +59,7 @@ switch ($action) {
             if(isset($activity_name)) {
                 include 'views/home.php';
             } else {
-                header('Location: activites');
+                header('Location: activities');
             }
         } else {
             header('Location: accounts');
