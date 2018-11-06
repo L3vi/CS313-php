@@ -22,6 +22,7 @@ if ($activity_name == NULL) {
 $activity_id = filter_input(INPUT_POST, 'activityId');
 if ($activity_id == NULL) {
     $activity_id = filter_input(INPUT_GET, 'activityId');
+    $_SESSION['activity_id'] = filter_input(INPUT_GET, 'activityId');
 }
 
 $action = filter_input(INPUT_POST, 'action');
@@ -51,7 +52,7 @@ $weekNav = createWeekNav($workWeek);
 
 switch ($action) {
     case 'clockIn':
-        $successfulClockIn = startTimeEntry($activity_id);
+        $successfulClockIn = startTimeEntry($_SESSION['activity_id']);
         if ($successfulClockIn) {
             $message = "<p>Successfully clocked in!</p>";
             print_r($_SESSION);
