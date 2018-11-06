@@ -2,15 +2,23 @@
 
 // Clock-It Model
 
+function startTimeEntry() {
+
+}
+
+function endTimeEntry() {
+	
+}
+
 // Gets list of projects
-function getTimeEntries() {
+function getTimeEntries($activity_id) {
 
-//    $database = dbConnect();
-//    $sql = 'SELECT categoryName, categoryId FROM categories ORDER BY categoryName ASC';
-//    $statement = $database->prepare($sql);
-//    $statement->execute();
-//    $categories = $statement->fetchAll();
-//    $statement->closeCursor();
-//    return $categories;
-
+   $database = getDatabase();
+    $sql = 'SELECT starttime, endtime, notes FROM activities WHERE activity_id=:activity_id';
+    $statement = $database->prepare($sql);
+    $statement->bindValue(':activity_id', $activity_id, PDO::PARAM_INT);
+    $statement->execute();
+    $timeEntries = $statement->fetchAll();
+    $statement->closeCursor();
+    return $timeEntries;
 }

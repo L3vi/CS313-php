@@ -27,7 +27,8 @@
         <div class='export'>
             <p>23 Hours <img id='shareImg' class="rounded-circle" src='images/share.png'></p>
         </div>
-
+        
+        <?php echo $timeSheet; ?>
 
         <div class='weekNav'>
             <ul class="nav nav-tabs">
