@@ -11,6 +11,7 @@ session_start();
 //if ($activity_id == NULL) {
 //    $activity_id = 0;
 //}
+
 // Bad naming, but the right variables are being pulled from the activities page
 
 $activity_name = filter_input(INPUT_POST, 'activityName');
@@ -55,6 +56,8 @@ switch ($action) {
         break;
     default:
         if(isset($_SESSION['userId'])) {
+            echo $activity_id;
+            echo $activity_name;
             include 'views/home.php';
         } else {
             header('Location: accounts');
