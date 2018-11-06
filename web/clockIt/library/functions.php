@@ -20,7 +20,7 @@ function createWeekNav($workWeek) {
 	}
 	$weekNav .= "</ul>\n</div>";
 
-	return $weekNav
+	return $weekNav;
 }
 
 function getTotalTime($timeEntries) {
