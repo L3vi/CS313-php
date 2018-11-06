@@ -22,7 +22,7 @@ session_start();
             <br/>
             <?php
             echo "Email address: " . $_SESSION['email'] . "<br/>";
-            echo "User ID: " . $_SESSION['userId']; . "<br/>";
+            echo "User ID: " . $_SESSION['userId'] . "<br/>";
             ?>
 
             <form action="../accounts/index.php" method="post">
