@@ -21,16 +21,16 @@ session_start();
             <h1>Your Account</h1>
             <br/>
             <?php
-            echo "Email address: " . $_SESSION['email'] . "<br/>";
+            echo "Email address: <br/>" . $_SESSION['email'] . "<br/>";
             echo "User ID: " . $_SESSION['userId'] . "<br/>";
             ?>
-
+            <br/>
             <form action="../accounts/index.php" method="post">
                 <input type="submit" value="Logout">
                 <input type="hidden" name="action" value="logout">
             </form>
             <br/>
-            <a href="../index.php">Home</a>
+            <a href="../index.php">Clock It!</a>
         </main>
 
         <footer>
