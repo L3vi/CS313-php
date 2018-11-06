@@ -19,10 +19,10 @@ session_start();
     <body>
         <main>
             <h1>Your Account</h1>
-
+            <br/>
             <?php
             echo "Email address: " . $_SESSION['email'] . "<br/>";
-            echo "User ID: " . $_SESSION['userId'];
+            echo "User ID: " . $_SESSION['userId']; . "<br/>";
             ?>
 
             <form action="../accounts/index.php" method="post">
