@@ -16,6 +16,5 @@ function createTimesheet($timeEntries) {
 function getTotalTime($timeEntries) {
 	foreach ($timeEntries as $entry) {
 		$today = getdate($entry[starttime]);
-		print_r($today);
 	}
 }
