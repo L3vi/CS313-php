@@ -10,7 +10,7 @@ require_once('library/functions.php');
 //if ($activity_id == NULL) {
 //    $activity_id = 0;
 //}
-$activity_id = 0;
+$activity_id = 1;
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
