@@ -14,7 +14,7 @@ session_start();
         
         <nav class="navbar navbar-default bg-dark sticky-top">
             <a class="nav-link" href="activities/index.php">Activities</a>
-            <a class="nav-link" href="#"><?php echo ucfirst($activity_name); ?></a>
+            <a class="nav-link" href="activities/index.php"><?php echo ucfirst($activity_name); ?></a>
             <a class="nav-link" <?php if(isset($_SESSION['userId'])) { echo "href='accounts/index.php?action=account'"; } else { echo "href='accounts/index.php?action=loginView'"; }?>>Account</a>
         </nav>
 
@@ -30,8 +30,8 @@ session_start();
             <p>23 Hours <img id='shareImg' class="rounded-circle" src='images/share.png'></p>
         </div>
 
-        <?php echo $weekNav; ?>
-        
+        <!-- Will add navigation bar once it's functional -->
+        <!-- <?php echo $weekNav; ?> -->
         <div class='weekContent'>
             <?php echo $timeSheet; ?>
         </div>
