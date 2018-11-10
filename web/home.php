@@ -17,14 +17,8 @@ if (isset($_SESSION["timesVisited"])) {
 	require("header.php");
 ?>
 <body>
-	
+	<h1>My name is Levi</h1>
 	<br/>
-	<p>This website is very undeveloped. #StemFairProblems</p>
-	<p>Move along!</p>
-	<form action="form.php" method="post">
-		Enter Words: <input type="text" name="words">
-		<br/>
-		<input type="submit">
-	</form>
+	<p>Welcome, you probably want to head on over to the assignments page</p>
 </body>
 </html>

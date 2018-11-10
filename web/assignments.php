@@ -12,6 +12,7 @@ require("header.php");
 	<div class="list-group">
 		<a href="shoppingCart/browse.php" class="list-group-item list-group-item-action">Shopping Cart</a>
 		<a href="clockIt" class="list-group-item list-group-item-action">Clock It!</a>
+		<a href="node" class="list-group-item list-group-item-action">Node.js</a>
 	</div>
 	<?php 
 
