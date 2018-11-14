@@ -53,6 +53,7 @@ require("header.php");
 				<div class="col-lg">
 					<img src="images/burgerKing.jpg"><br/>
 					<input type="checkbox" class="bk"><br/>
+					<label>test</label>
 					
 					<figcaption class="figure-caption">
 						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('burgerKing', false)">-</button>
@@ -94,6 +95,7 @@ require("header.php");
 				</div>
 			</div>
 			<input type="checkbox" class="bk">
+			<label></label>
 			<!-- <input type="submit" name="checkout"> -->
 		</div>
 	</form>
