@@ -46,7 +46,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"] + label{
-    background:url('images/check-box.png') no-repeat;
+    background:url('images/burgerKing.jpg') no-repeat;
     height: 16px;
     width: 16px;
     display:inline-block;
@@ -54,7 +54,7 @@ input[type="checkbox"] + label{
 }
 
 input[type="checkbox"]:checked + label{
-    background:url('images/check-box-checked.png') no-repeat;
+    background:url('images/burgerKing.jpg') no-repeat;
     height: 16px;
     width: 16px;
     display:inline-block;
