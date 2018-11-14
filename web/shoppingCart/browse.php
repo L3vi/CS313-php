@@ -92,6 +92,7 @@ require("header.php");
 					</figcaption>
 				</div>
 			</div>
+			<input type="checkbox" class="bk">
 			<!-- <input type="submit" name="checkout"> -->
 		</div>
 	</form>

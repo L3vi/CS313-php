@@ -1,0 +1,24 @@
+{
+  "name": "cs313-php",
+  "version": "1.0.0",
+  "description": "CS 313 Course Directory of projects",
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byui-cs/cs313-php.git"
+  },
+  "author": "Levi Stum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/byui-cs/cs313-php/issues"
+  },
+  "homepage": "https://github.com/byui-cs/cs313-php#readme"
+}

@@ -34,3 +34,19 @@ figcaption {
 .btn-increment:focus, .btn-increment.focus {
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
+
+.bk {
+  background: url("images/burgerKing.jpg") no-repeat scroll 0 0 transparent;
+}
+
+.cfa {
+  background: url("images/chickFilA.jpg") no-repeat scroll 0 0 transparent;
+}
+
+.md {
+  background: url("images/mcDonalds.jpg") no-repeat scroll 0 0 transparent;
+}
+
+.w {
+  background: url("images/wendys.jpg") no-repeat scroll 0 0 transparent;
+}
