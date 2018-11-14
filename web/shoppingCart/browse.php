@@ -52,6 +52,7 @@ require("header.php");
 			<div class="row">
 				<div class="col-lg">
 					<img src="images/burgerKing.jpg"><br/>
+					<input type="checkbox" class="bk"><br/>
 					
 					<figcaption class="figure-caption">
 						<button type="button" class="btn btn-increment rounded-circle" onclick="updateCart('burgerKing', false)">-</button>

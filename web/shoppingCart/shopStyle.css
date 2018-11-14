@@ -8,6 +8,12 @@
 	border-radius: 5px;
 }
 
+.col-lg input[type="checkbox"] {
+  width: 75%;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
 /*.col-lg img:hover {
 	opacity: 0.5;
 }*/
