@@ -4,6 +4,7 @@
 
 require_once('../models/accounts-model.php');
 require_once('../library/dbConnect.php');
+session_start();
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {

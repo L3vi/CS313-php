@@ -19,11 +19,7 @@
 
             <!--Dynamically display activities-->
             <?php echo $activitiesList; ?>
-            <!-- <ul>
-                <li><a href='../index.php'>Work</a></li>
-                <li>Service</li>
-                <li>Personal Project</li>
-            </ul> -->
+            
             <a href="../activities/index.php?action=createActivityView">Create a new Activity</a>
 
 
