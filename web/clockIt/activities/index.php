@@ -24,10 +24,11 @@ switch($action) {
         break;
     case 'setActivity':
         print_r($_POST);
-
+        echo "<br/>";
         $_SESSION['activity_name'] = filter_input(INPUT_POST, 'activityName', FILTER_SANITIZE_STRING);
         $_SESSION['activity_id'] = filter_input(INPUT_POST, 'activityId', FILTER_SANITIZE_STRING);
         print_r(array_search(filter_input(INPUT_POST, 'activityName', FILTER_SANITIZE_STRING), filter_input(INPUT_POST, 'activityId')));
+        echo "<br/>";
         print_r($_SESSION);
         break;
     case 'createActivityView':
