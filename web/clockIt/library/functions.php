@@ -38,8 +38,8 @@ function createActivitiesList($activities) {
 
 	$activitiesList = '<form>';
 	foreach ($activities as $activity) {
-		$activitiesList .= "<input type='submit' name='" . urlencode($activity['id']) . "' value='" . urlencode($activity['name']) . "'>"
-	}
+		$activitiesList .= "<input type='submit' name='" . urlencode($activity['id']) . "' value='" . urlencode($activity['name']) . "'>";
+	};
 	$activitiesList .= "<input type='hidden' name='action' value='setActivity'>";
 	$activitiesList .= '</form>';
 	return $activitiesList;
