@@ -38,7 +38,7 @@ function createActivitiesList($activities) {
 
 	$activitiesList = '<form method="post">';
 	foreach ($activities as $activity) {
-		$activitiesList .= "<input type='submit' name='" . urlencode($activity['name']) . "' value='" . urlencode($activity['name']) . "'>";
+		$activitiesList .= "<input type='submit' name='activityName' value='" . urlencode($activity['name']) . "'>";
 	};
 	$activitiesList .= "<input type='hidden' name='action' value='setActivity'>";
 	$activitiesList .= '</form>';
