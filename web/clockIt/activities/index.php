@@ -28,7 +28,7 @@ switch($action) {
         $_SESSION['activity_name'] = filter_input(INPUT_POST, 'activityName', FILTER_SANITIZE_STRING);
         $_SESSION['activity_id'] = filter_input(INPUT_POST, 'activityId', FILTER_SANITIZE_STRING);
         echo $_POST['activityName'];
-        echo $_POST['activityId'];
+        echo $_POST['activityId[1]'];
         print_r(array_search($_POST['activityName'], $_POST['activityId']));
         echo "<br/>";
         print_r($_SESSION);
