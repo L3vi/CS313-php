@@ -31,9 +31,7 @@ switch($action) {
         echo "<br/>";
         echo $_POST['activityId'][1];
         echo "<br/>";
-        $an = $_POST['activityName'];
-        $aia = $_POST['activityId'];
-        $activityId = array_search($an, $aia);
+        $activityId = array_search($_POST['activityName'], $activities);
         echo $activityId;
         echo "<br/>";
         print_r($_SESSION);
