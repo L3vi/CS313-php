@@ -30,7 +30,7 @@ session_start();
                 <input type="hidden" name="action" value="logout">
             </form>
             <br/>
-            <a href="../index.php">Clock It!</a>
+            <a href="../">Clock It!</a>
         </main>
 
         <footer>
