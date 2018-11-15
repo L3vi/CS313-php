@@ -22,6 +22,11 @@ switch($action) {
     case 'displayActivities':
         include '../views/display-activities.php';
         break;
+    case 'setActivity':
+        $_SESSION['activity_name'] = filter_input(INPUT_POST, 'activityName', FILTER_SANITIZE_STRING);
+        $_SESSION['activity_id'] = filter_input(INPUT_POST, 'activityId', FILTER_SANITIZE_STRING);
+        var_dump($_SESSION);
+        break;
     case 'createActivityView':
         include '../views/create-activity.php';
         break;
