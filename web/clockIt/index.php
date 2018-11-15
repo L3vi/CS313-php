@@ -14,15 +14,14 @@ session_start();
 
 // Bad naming, but the right variables are being pulled from the activities page
 
-$activity_name = filter_input(INPUT_POST, 'activityName');
-if ($activity_name == NULL) {
-    $activity_name = filter_input(INPUT_GET, 'activityName');
+$_SESSION['activity_name'] = filter_input(INPUT_POST, 'activityName');
+if (!isset($_SESSION['activity_name'])) {
+    $_SESSION['activity_name'] = filter_input(INPUT_GET, 'activityName');
 }
 
-$activity_id = filter_input(INPUT_POST, 'activityId');
-if ($activity_id == NULL) {
-    $activity_id = filter_input(INPUT_GET, 'activityId');
-    $_SESSION['activity_id'] = $activity_id;
+$_SESSION['activity_id'] = filter_input(INPUT_POST, 'activityId');
+if (!isset($_SESSION['activity_id'])) {
+    $_SESSION['activity_id'] = filter_input(INPUT_GET, 'activityId');
 }
 
 $action = filter_input(INPUT_POST, 'action');
@@ -58,29 +57,29 @@ switch ($action) {
     // } else {
         // header('Location: activities');
     // }
-    $successfulClockIn = false;
-    if ($successfulClockIn) {
-        $message = "<p>Successfully clocked in!</p>";
-        include 'views/home.php';
-        exit;
-    } else {
-        $message = "<p>Did not successfully clock in...</p>";
-        include 'views/home.php';
-        exit;
-    }
-    break;
-    case 'clockOut':
-    break;
-    default:
-    if(isset($_SESSION['userId'])) {
-        if(isset($_SESSION['activity_id'])) {
+        $successfulClockIn = false;
+        if ($successfulClockIn) {
+            $message = "<p>Successfully clocked in!</p>";
             include 'views/home.php';
+            exit;
         } else {
-            header('Location: activities');
+            $message = "<p>Did not successfully clock in...</p>";
+            include 'views/home.php';
+            exit;
         }
-    } else {
-        header('Location: accounts');
-    }
+        break;
+    case 'clockOut':
+        break;
 
-    break;
+    default:
+        if(isset($_SESSION['userId'])) {
+            if(isset($_SESSION['activity_id'])) {
+                include 'views/home.php';
+            } else {
+                header('Location: activities');
+            }
+        } else {
+            header('Location: accounts');
+        }
+        break;
 }
