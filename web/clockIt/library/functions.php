@@ -39,7 +39,8 @@ function createActivitiesList($activities) {
 	$activitiesList = '<form method="post">';
 	foreach ($activities as $activity) {
 		$activitiesList .= "<input type='submit' name='activityName' value='" . ucfirst($activity['name']) . "'>";
-		$activitiesList .= "<input type='hidden' name='activityId[]' value='" . urlencode($activity['id']) . "'><br/>";
+		// FIGURE OUT HOW TO SEND PROPER ID
+		// $activitiesList .= "<input type='hidden' name='activityId[]' value='" . urlencode($activity['id']) . "'><br/>";
 	};
 	$activitiesList .= "<input type='hidden' name='action' value='setActivity'>";
 	$activitiesList .= '</form>';
