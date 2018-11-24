@@ -30,19 +30,19 @@ function getTotalTime($timeEntries) {
 }
 
 function createActivitiesList($activities) {
-	// $activitiesList = '<ul>';
-	// foreach ($activities as $activity) {
-	// 	$activitiesList .= "<li><a href='../index.php?activityName=" . urlencode($activity['name']) . "&activityId=" . urlencode($activity['id']) . "'>" . ucfirst($activity[name]) . "</a></li>";
-	// }
-	// $activitiesList .= '</ul>';
-
-	$activitiesList = '<form method="post">';
+	$activitiesList = '<ul>';
 	foreach ($activities as $activity) {
-		$activitiesList .= "<input type='submit' name='activityName' value='" . ucfirst($activity['name']) . "'>";
-		// FIGURE OUT HOW TO SEND PROPER ID
-		$activitiesList .= "<input type='hidden' name='activityId[]' value='" . urlencode($activity['id']) . "'><br/>";
-	};
-	$activitiesList .= "<input type='hidden' name='action' value='setActivity'>";
-	$activitiesList .= '</form>';
+		$activitiesList .= "<li><a href='../index.php?activityName=" . urlencode($activity['name']) . "&activityId=" . urlencode($activity['id']) . "'>" . ucfirst($activity[name]) . "</a></li>";
+	}
+	$activitiesList .= '</ul>';
+
+	// $activitiesList = '<form method="post">';
+	// foreach ($activities as $activity) {
+	// 	$activitiesList .= "<input type='submit' name='activityName' value='" . ucfirst($activity['name']) . "'>";
+	// 	// FIGURE OUT HOW TO SEND PROPER ID
+	// 	$activitiesList .= "<input type='hidden' name='activityId[]' value='" . urlencode($activity['id']) . "'><br/>";
+	// };
+	// $activitiesList .= "<input type='hidden' name='action' value='setActivity'>";
+	// $activitiesList .= '</form>';
 	return $activitiesList;
 }
