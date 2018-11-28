@@ -9,10 +9,6 @@ session_start();
 
 // Bad naming, but the right variables are being pulled from the activities page
 
-// $_SESSION['activity_name'] = filter_input(INPUT_GET, 'activityName');
-
-// $_SESSION['activity_id'] = filter_input(INPUT_GET, 'activityId');
-
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
     $action = filter_input(INPUT_GET, 'action');
@@ -40,8 +36,7 @@ $weekNav = createWeekNav($workWeek);
 
 switch ($action) {
     case 'clockIn':
-        include('views/home.php');
-        // var_dump($_SESSION['activity_id']);
+        var_dump($_SESSION['activity_id']);
         /*
         if(isset($_SESSION['activity_id'])) {
             $successfulClockIn = startTimeEntry($_SESSION['activity_id']);
