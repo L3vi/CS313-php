@@ -15,7 +15,7 @@ if ($action == NULL) {
 }
 
 // Create variable timeEntries from database
-$timeEntries = getTimeEntries($activity_id);
+$timeEntries = getTimeEntries($_SESSION['activity_id']);
 // Create timesheet (html table) with timeEntries
 $timeSheet = createTimesheet($timeEntries);
 
