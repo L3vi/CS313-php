@@ -40,7 +40,7 @@ $weekNav = createWeekNav($workWeek);
 
 switch ($action) {
     case 'clockIn':
-        include('.');
+        include('views/home.php?activityName=' . $_SESSION['activity_name'] . '&activityId=' . $_SESSION['activity_id']);
         // var_dump($_SESSION['activity_id']);
         /*
         if(isset($_SESSION['activity_id'])) {
