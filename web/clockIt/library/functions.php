@@ -38,9 +38,9 @@ function createActivitiesList($activities) {
 
 
 	// EXPERIMENTING MAKING THIS A POST REQUEST INSTEAD OF A GET
-	
+	$activitiesList = '';
 	foreach ($activities as $activity) {
-		$activitiesList = '<form method="post">';
+		$activitiesList .= '<form method="post">';
 		$activitiesList .= "<input type='submit' name='activityName' value='" . ucfirst($activity['name']) . "'>";
 		// FIGURE OUT HOW TO SEND PROPER ID
 		$activitiesList .= "<input type='hidden' name='activityId' value='" . urlencode($activity['id']) . "'><br/>";
