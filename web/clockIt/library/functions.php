@@ -10,11 +10,10 @@ function createTimesheet($timeEntries) {
 		$timeSheet .= "<tr>\n<td>" . date('M-d-Y', strtotime($entry['starttime'])) . ' ' . date('h:i:s', strtotime($entry['starttime'])) . "</td>\n";
 		// Creates ending time
 		$endDate = '';
-		if (isset($entry['endtime'])
-		{
+		if (isset($entry['endtime'])) {
 			$endDate = date('M-d-Y', strtotime($entry['endtime'])) . ' ' . date('h:i:s', strtotime($entry['endtime']));
 		}
-		$timeSheet .= "<td>" . $endDate . "</td>\n<td></td>\n<td>$entry[notes]</td></tr>";
+		$timeSheet .= "<td>$endDate</td>\n<td></td>\n<td>$entry[notes]</td></tr>";
 	}
 	$timeSheet .= "\n</tbody>\n</table>";
 
