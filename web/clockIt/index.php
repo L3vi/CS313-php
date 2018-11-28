@@ -40,7 +40,7 @@ $weekNav = createWeekNav($workWeek);
 
 switch ($action) {
     case 'clockIn':
-        var_dump($_SESSION['activity_id']);
+        // var_dump($_SESSION['activity_id']);
         /*
         if(isset($_SESSION['activity_id'])) {
             $successfulClockIn = startTimeEntry($_SESSION['activity_id']);
