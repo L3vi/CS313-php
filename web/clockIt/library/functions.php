@@ -30,19 +30,10 @@ function getTotalTime($timeEntries) {
 }
 
 function createActivitiesList($activities) {
-	// $activitiesList = '<ul>';
-	// foreach ($activities as $activity) {
-	// 	$activitiesList .= "<li><a href='../index.php?activityName=" . urlencode($activity['name']) . "&activityId=" . urlencode($activity['id']) . "'>" . ucfirst($activity[name]) . "</a></li>";
-	// }
-	// $activitiesList .= '</ul>';
-
-
-	// EXPERIMENTING MAKING THIS A POST REQUEST INSTEAD OF A GET
 	$activitiesList = '';
 	foreach ($activities as $activity) {
 		$activitiesList .= '<form method="post">';
 		$activitiesList .= "<input type='submit' name='activityName' value='" . ucfirst($activity['name']) . "'>";
-		// FIGURE OUT HOW TO SEND PROPER ID
 		$activitiesList .= "<input type='hidden' name='activityId' value='" . urlencode($activity['id']) . "'><br/>";
 		$activitiesList .= "<input type='hidden' name='action' value='setActivity'>";
 		$activitiesList .= '</form>';
