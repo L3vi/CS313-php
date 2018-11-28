@@ -23,18 +23,10 @@ switch($action) {
         include '../views/display-activities.php';
         break;
     case 'setActivity':
-        print_r($_POST);
-        echo "<br/>";
         $_SESSION['activity_name'] = filter_input(INPUT_POST, 'activityName', FILTER_SANITIZE_STRING);
         $_SESSION['activity_id'] = filter_input(INPUT_POST, 'activityId', FILTER_SANITIZE_STRING);
-        echo $_POST['activityName'];
-        echo "<br/>";
-        echo $_POST['activityId'][1];
-        echo "<br/>";
-        $activityId = array_search($_POST['activityName'], $activities);
-        // echo $activityId;
-        echo "<br/>";
-        print_r($_SESSION);
+        // $activityId = array_search($_POST['activityName'], $activities);
+        header('Location: ../index.php');
         break;
     case 'createActivityView':
         include '../views/create-activity.php';
