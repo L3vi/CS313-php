@@ -19,6 +19,9 @@ $timeEntries = getTimeEntries($_SESSION['activity_id']);
 // Create timesheet (html table) with timeEntries
 $timeSheet = createTimesheet($timeEntries);
 
+$clockInButton = '<form action="../clockIt/index.php" method="post"><input type="submit" value="Clock In"><input type="hidden" name="action" value="clockIn"></form>';
+$clockOutButton = '<form action="../clockIt/index.php" method="post"><input type="submit" value="Clock In"><input type="hidden" name="action" value="clockOut"></form>';
+
 $workWeek = [
 	"Monday",
 	"Tuesday",
@@ -45,6 +48,7 @@ switch ($action) {
 
         if ($successfulClockIn) {
             $message = "<p>Successfully clocked in!</p>";
+            $_SESSION['clocked_in'] = true;
             header('Location: .');
             exit;
         } else {
