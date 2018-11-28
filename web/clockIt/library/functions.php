@@ -7,11 +7,11 @@ function createTimesheet($timeEntries) {
 	$timeSheet .= "\n</tr>\n</thead>\n<tbody>";
 	foreach ($timeEntries as $entry) {
 		// Creates starting time
-		$timeSheet .= "<tr>\n<td>" . date('M d, Y', strtotime($entry['starttime'])) . ' / ' . date('g:i A e', strtotime($entry['starttime'])) . "</td>\n";
+		$timeSheet .= "<tr>\n<td>" . date('M d, Y', strtotime($entry['starttime'])) . ' / ' . date('g:i A', strtotime($entry['starttime'])) . "</td>\n";
 		// Creates ending time
 		$endDate = '';
 		if (isset($entry['endtime'])) {
-			$endDate = date('M d, Y', strtotime($entry['endtime'])) . ' / ' . date('g:i A e', strtotime($entry['endtime']));
+			$endDate = date('M d, Y', strtotime($entry['endtime'])) . ' / ' . date('g:i A', strtotime($entry['endtime']));
 		}
 		$timeSheet .= "<td>$endDate</td>\n<td></td>\n<td>$entry[notes]</td></tr>";
 	}
