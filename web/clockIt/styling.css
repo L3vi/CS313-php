@@ -28,11 +28,20 @@ nav {
 
 }
 
-.timerButton input[type=submit] {
+#clockIn input[type=submit] {
     font-size: 3em;
     border-radius: 1em;
     background-color: #006000;
     border: 5px solid green;
+    color: white;
+    width: 6em;
+}
+
+#clockOut input[type=submit] {
+    font-size: 3em;
+    border-radius: 1em;
+    background-color: #006000;
+    border: 5px solid red;
     color: white;
     width: 6em;
 }

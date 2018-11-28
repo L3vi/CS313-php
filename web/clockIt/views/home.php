@@ -29,15 +29,15 @@ session_start();
             ?>
             <?php
             if (!$_SESSION['clocked_in']) {
-                echo '<form action="../clockIt/index.php" method="post">
+                echo '<form id="clockIn" action="../clockIt/index.php" method="post">
                 <input type="submit" value="Clock In">
                 <input type="hidden" name="action" value="clockIn">
             </form>';
             } else {
-                echo '<form action="../clockIt/index.php" method="post">
+                echo '<form id="clockOut" action="../clockIt/index.php" method="post">
                 <input type="submit" value="Clock Out">
-                
-            </form>';
+                </form>';
+                // <input type="hidden" name="action" value="clockOut">
             }
             ?>
         <!-- <div class='timerButton'>
