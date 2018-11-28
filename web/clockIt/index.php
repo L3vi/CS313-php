@@ -42,11 +42,12 @@ switch ($action) {
     case 'clockIn':
     
         if(isset($_SESSION['activity_id'])) {
-            $successfulClockIn = startTimeEntry($_SESSION['activity_id']);
+            
         } else {
             // Please select an activity.
             // header('Location: activities');
         }
+        $successfulClockIn = startTimeEntry($_SESSION['activity_id']);
         // $successfulClockIn = false;
         if ($successfulClockIn) {
             $message = "<p>Successfully clocked in!</p>";
@@ -54,7 +55,7 @@ switch ($action) {
             exit;
         } else {
             $message = "<p>Did not successfully clock in...</p>";
-            // include 'views/home.php';
+            include 'views/home.php';
             exit;
         }
         break;
