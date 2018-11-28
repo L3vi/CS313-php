@@ -19,6 +19,8 @@ if (!isset($_SESSION['activity_id'])) {
     $_SESSION['activity_id'] = filter_input(INPUT_GET, 'activityId');
 }
 
+var_dump($_SESSION);
+
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
     $action = filter_input(INPUT_GET, 'action');
