@@ -47,6 +47,7 @@ switch ($action) {
             // Please select an activity.
             // header('Location: activities');
         }
+        echo $_SESSION['activity_id'];
         $successfulClockIn = startTimeEntry($_SESSION['activity_id']);
         // $successfulClockIn = false;
         if ($successfulClockIn) {
