@@ -38,16 +38,8 @@ session_start();
                 <input type="submit" value="Clock Out">
                 <input type="hidden" name="action" value="clockOut">
                 </form>';
-                
             }
             ?>
-        <!-- <div class='timerButton'>
-            <form action="../clockIt/index.php" method="post">
-                <input type="submit" value="Clock In">
-                <input type="hidden" name="action" value="clockIn">
-            </form>
-            
-        </div> -->
 
         <div class='export'>
             <p>23 Hours <img id='shareImg' class="rounded-circle" src='images/share.png'></p>
