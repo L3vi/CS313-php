@@ -45,8 +45,9 @@ function createActivitiesList($activities) {
 		// FIGURE OUT HOW TO SEND PROPER ID
 		$activitiesList .= "<input type='hidden' name='activityId' value='" . urlencode($activity['id']) . "'><br/>";
 		$activitiesList .= "<input type='hidden' name='action' value='setActivity'>";
+		$activitiesList .= '</form>';
 	};
 	
-	// $activitiesList .= '</form>';
+	
 	return $activitiesList;
 }
