@@ -10,14 +10,14 @@ session_start();
 // Bad naming, but the right variables are being pulled from the activities page
 
 // $_SESSION['activity_name'] = filter_input(INPUT_POST, 'activityName');
-if (!isset($_SESSION['activity_name'])) {
+
     $_SESSION['activity_name'] = filter_input(INPUT_GET, 'activityName');
-}
+
 
 // $_SESSION['activity_id'] = filter_input(INPUT_POST, 'activityId');
-if (!isset($_SESSION['activity_id'])) {
+
     $_SESSION['activity_id'] = filter_input(INPUT_GET, 'activityId');
-}
+
 
 var_dump($_SESSION);
 
