@@ -36,6 +36,8 @@ function createActivitiesList($activities) {
 	}
 	$activitiesList .= '</ul>';
 
+
+	// EXPERIMENTING MAKING THIS A POST REQUEST INSTEAD OF A GET
 	// $activitiesList = '<form method="post">';
 	// foreach ($activities as $activity) {
 	// 	$activitiesList .= "<input type='submit' name='activityName' value='" . ucfirst($activity['name']) . "'>";
