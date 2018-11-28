@@ -54,7 +54,7 @@ switch ($action) {
             exit;
         } else {
             $message = "<p>Did not successfully clock in...</p>";
-            include 'views/home.php';
+            // include 'views/home.php';
             exit;
         }
         break;
