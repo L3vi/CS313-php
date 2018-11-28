@@ -32,7 +32,7 @@ function endTimeEntry() {
     session_start();
     $db = getDatabase();
     $endTime = date('m-d-Y') . ' ' . date('H:i:s');
-    $sql = 'UPDATE timeentries set (endtime) VALUES (:endtime) WHERE id = :entryId';
+    $sql = 'UPDATE timeentries SET endtime = :endtime WHERE id = :entryId';
     $statement = $db->prepare($sql);
     $statement->bindValue(':endtime', $endTime, PDO::PARAM_STR);
     $statement->bindValue(':entryId', $_SESSION['currentEntryId'], PDO::PARAM_INT);
