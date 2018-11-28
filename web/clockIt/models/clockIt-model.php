@@ -31,7 +31,7 @@ function endTimeEntry() {
     // Create a connection object using the acme connection function
     session_start();
     $db = getDatabase();
-    $endTime = date('m-d-Y') . ' ' . date('H:i:s');
+    $endTime = date('M-d-Y') . ' ' . date('h:i:s');
     $sql = 'UPDATE timeentries SET endtime = :endtime WHERE id = :entryId';
     $statement = $db->prepare($sql);
     $statement->bindValue(':endtime', $endTime, PDO::PARAM_STR);

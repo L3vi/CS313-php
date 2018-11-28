@@ -6,7 +6,8 @@ function createTimesheet($timeEntries) {
 	$timeSheet .= "<th scope='col'>Start Time</th>\n<th scope='col'>End Time</th>\n<th scope='col'>Total Time</th>\n<th scope='col'>Notes</th>";
 	$timeSheet .= "\n</tr>\n</thead>\n<tbody>";
 	foreach ($timeEntries as $entry) {
-		$timeSheet .= "<tr>\n<td>$entry[starttime]</td>\n<td>$entry[endtime]</td>\n<td></td>\n<td>$entry[notes]</td></tr>";
+		$timeSheet .= "<tr>\n<td>" . date('M-d-Y', $entry[starttime]) . ' ' . date('h:i:s', $entry[starttime]) . "</td>\n<td>" . date('M-d-Y', $entry[starttime]) . ' ' . date('h:i:s', $entry[starttime]) . "</td>\n<td></td>\n<td>$entry[notes]</td></tr>";
+		$startTime = ;
 	}
 	$timeSheet .= "\n</tbody>\n</table>";
 
