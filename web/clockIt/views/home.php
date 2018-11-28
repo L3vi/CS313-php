@@ -36,8 +36,9 @@ session_start();
             } else {
                 echo '<form id="clockOut" action="../clockIt/index.php" method="post">
                 <input type="submit" value="Clock Out">
+                <input type="hidden" name="action" value="clockOut">
                 </form>';
-                // <input type="hidden" name="action" value="clockOut">
+                
             }
             ?>
         <!-- <div class='timerButton'>
