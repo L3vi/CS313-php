@@ -9,17 +9,9 @@ session_start();
 
 // Bad naming, but the right variables are being pulled from the activities page
 
-// $_SESSION['activity_name'] = filter_input(INPUT_POST, 'activityName');
+$_SESSION['activity_name'] = filter_input(INPUT_GET, 'activityName');
 
-    $_SESSION['activity_name'] = filter_input(INPUT_GET, 'activityName');
-
-
-// $_SESSION['activity_id'] = filter_input(INPUT_POST, 'activityId');
-
-    $_SESSION['activity_id'] = filter_input(INPUT_GET, 'activityId');
-
-
-var_dump($_SESSION);
+$_SESSION['activity_id'] = filter_input(INPUT_GET, 'activityId');
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
@@ -49,11 +41,11 @@ $weekNav = createWeekNav($workWeek);
 switch ($action) {
     case 'clockIn':
     
-    // if(isset($_SESSION['activity_id'])) {
-        // $successfulClockIn = startTimeEntry($_SESSION['activity_id']);
-    // } else {
-        // header('Location: activities');
-    // }
+        if(isset($_SESSION['activity_id'])) {
+            $successfulClockIn = startTimeEntry($_SESSION['activity_id']);
+        } else {
+            header('Location: activities');
+        }
         $successfulClockIn = false;
         if ($successfulClockIn) {
             $message = "<p>Successfully clocked in!</p>";
