@@ -47,7 +47,7 @@ switch ($action) {
             // Please select an activity.
             // header('Location: activities');
         }
-        $successfulClockIn = false;
+        // $successfulClockIn = false;
         if ($successfulClockIn) {
             $message = "<p>Successfully clocked in!</p>";
             include 'views/home.php';
