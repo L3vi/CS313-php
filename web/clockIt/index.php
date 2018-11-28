@@ -45,11 +45,11 @@ switch ($action) {
 
         if ($successfulClockIn) {
             $message = "<p>Successfully clocked in!</p>";
-            header('Location: views/home.php');
+            header('Location: .');
             exit;
         } else {
             $message = "<p>Did not successfully clock in...</p>";
-            header('Location: views/home.php');
+            header('Location: .');
             exit;
         }
         break;
