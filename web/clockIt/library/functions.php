@@ -7,7 +7,6 @@ function createTimesheet($timeEntries) {
 	$timeSheet .= "\n</tr>\n</thead>\n<tbody>";
 	foreach ($timeEntries as $entry) {
 		$timeSheet .= "<tr>\n<td>" . date('M-d-Y', $entry['starttime']) . ' ' . date('h:i:s', $entry['starttime']) . "</td>\n<td>" . date('M-d-Y', $entry['endtime']) . ' ' . date('h:i:s', $entry['endtime']) . "</td>\n<td></td>\n<td>$entry[notes]</td></tr>";
-		$startTime = ;
 	}
 	$timeSheet .= "\n</tbody>\n</table>";
 
