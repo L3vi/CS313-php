@@ -26,7 +26,7 @@ switch($action) {
         $_SESSION['activity_name'] = filter_input(INPUT_POST, 'activityName', FILTER_SANITIZE_STRING);
         $_SESSION['activity_id'] = filter_input(INPUT_POST, 'activityId', FILTER_SANITIZE_STRING);
         // $activityId = array_search($_POST['activityName'], $activities);
-        header('Location: ../index.php');
+        header('Location: ../');
         break;
     case 'createActivityView':
         include '../views/create-activity.php';
